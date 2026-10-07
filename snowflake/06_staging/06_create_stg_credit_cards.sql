@@ -1,0 +1,52 @@
+USE DATABASE ENTERPRISE_BANKING;
+USE SCHEMA STAGING;
+
+CREATE OR REPLACE VIEW STG_CREDIT_CARDS AS
+
+SELECT
+    RAW_RECORD:card_id::VARCHAR
+        AS CARD_ID,
+
+    RAW_RECORD:customer_id::VARCHAR
+        AS CUSTOMER_ID,
+
+    RAW_RECORD:account_id::VARCHAR
+        AS ACCOUNT_ID,
+
+    RAW_RECORD:branch_id::VARCHAR
+        AS BRANCH_ID,
+
+    RAW_RECORD:card_product::VARCHAR
+        AS CARD_PRODUCT,
+
+    RAW_RECORD:card_status::VARCHAR
+        AS CARD_STATUS,
+
+    RAW_RECORD:credit_limit::NUMBER(18, 2)
+        AS CREDIT_LIMIT,
+
+    RAW_RECORD:current_balance::NUMBER(18, 2)
+        AS CURRENT_BALANCE,
+
+    RAW_RECORD:available_credit::NUMBER(18, 2)
+        AS AVAILABLE_CREDIT,
+
+    RAW_RECORD:apr::NUMBER(10, 6)
+        AS APR,
+
+    RAW_RECORD:issued_date::DATE
+        AS ISSUED_DATE,
+
+    RAW_RECORD:expiration_date::DATE
+        AS EXPIRATION_DATE,
+
+    RAW_RECORD:currency_code::VARCHAR
+        AS CURRENCY_CODE,
+
+    SOURCE_FILE,
+
+    SOURCE_ROW_NUMBER,
+
+    LOAD_TIMESTAMP
+
+FROM RAW.RAW_CREDIT_CARDS;

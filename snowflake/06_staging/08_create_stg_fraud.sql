@@ -1,0 +1,63 @@
+USE DATABASE ENTERPRISE_BANKING;
+USE SCHEMA STAGING;
+
+CREATE OR REPLACE VIEW STG_FRAUD AS
+
+SELECT
+    RAW_RECORD:fraud_case_id::VARCHAR
+        AS FRAUD_CASE_ID,
+
+    RAW_RECORD:transaction_id::VARCHAR
+        AS TRANSACTION_ID,
+
+    RAW_RECORD:account_id::VARCHAR
+        AS ACCOUNT_ID,
+
+    RAW_RECORD:customer_id::VARCHAR
+        AS CUSTOMER_ID,
+
+    RAW_RECORD:branch_id::VARCHAR
+        AS BRANCH_ID,
+
+    RAW_RECORD:fraud_type::VARCHAR
+        AS FRAUD_TYPE,
+
+    RAW_RECORD:risk_score::NUMBER
+        AS RISK_SCORE,
+
+    RAW_RECORD:risk_level::VARCHAR
+        AS RISK_LEVEL,
+
+    RAW_RECORD:case_status::VARCHAR
+        AS CASE_STATUS,
+
+    RAW_RECORD:transaction_amount::NUMBER(18, 2)
+        AS TRANSACTION_AMOUNT,
+
+    RAW_RECORD:transaction_type::VARCHAR
+        AS TRANSACTION_TYPE,
+
+    RAW_RECORD:transaction_channel::VARCHAR
+        AS TRANSACTION_CHANNEL,
+
+    TRY_TO_TIMESTAMP_NTZ(
+        RAW_RECORD:transaction_timestamp::VARCHAR
+    ) AS TRANSACTION_TIMESTAMP,
+
+    RAW_RECORD:merchant_name::VARCHAR
+        AS MERCHANT_NAME,
+
+    RAW_RECORD:merchant_category::VARCHAR
+        AS MERCHANT_CATEGORY,
+
+    TRY_TO_TIMESTAMP_NTZ(
+        RAW_RECORD:detected_timestamp::VARCHAR
+    ) AS DETECTED_TIMESTAMP,
+
+    SOURCE_FILE,
+
+    SOURCE_ROW_NUMBER,
+
+    LOAD_TIMESTAMP
+
+FROM RAW.RAW_FRAUD;

@@ -1,0 +1,80 @@
+USE DATABASE ENTERPRISE_BANKING;
+USE SCHEMA CORE;
+
+MERGE INTO DIM_MERCHANT TGT
+
+USING
+(
+    SELECT DISTINCT
+
+        SHA2(
+            CONCAT_WS(
+                '|',
+                COALESCE(MERCHANT_NAME, ''),
+                COALESCE(MERCHANT_CATEGORY, ''),
+                COALESCE(TRANSACTION_CITY, ''),
+                COALESCE(TRANSACTION_STATE, '')
+            ),
+            256
+        ) AS MERCHANT_ID,
+
+        MERCHANT_NAME,
+
+        MERCHANT_CATEGORY,
+
+        TRANSACTION_CITY
+            AS MERCHANT_CITY,
+
+        TRANSACTION_STATE
+            AS MERCHANT_STATE
+
+    FROM STAGING.STG_TRANSACTIONS
+
+    WHERE MERCHANT_NAME IS NOT NULL
+
+) SRC
+
+ON TGT.MERCHANT_ID = SRC.MERCHANT_ID
+
+WHEN MATCHED THEN
+
+    UPDATE SET
+
+        TGT.MERCHANT_NAME =
+            SRC.MERCHANT_NAME,
+
+        TGT.MERCHANT_CATEGORY =
+            SRC.MERCHANT_CATEGORY,
+
+        TGT.MERCHANT_CITY =
+            SRC.MERCHANT_CITY,
+
+        TGT.MERCHANT_STATE =
+            SRC.MERCHANT_STATE,
+
+        TGT.IS_ACTIVE = TRUE,
+
+        TGT.UPDATED_TIMESTAMP =
+            CURRENT_TIMESTAMP()
+
+WHEN NOT MATCHED THEN
+
+    INSERT
+    (
+        MERCHANT_ID,
+        MERCHANT_NAME,
+        MERCHANT_CATEGORY,
+        MERCHANT_CITY,
+        MERCHANT_STATE,
+        IS_ACTIVE
+    )
+
+    VALUES
+    (
+        SRC.MERCHANT_ID,
+        SRC.MERCHANT_NAME,
+        SRC.MERCHANT_CATEGORY,
+        SRC.MERCHANT_CITY,
+        SRC.MERCHANT_STATE,
+        TRUE
+    );

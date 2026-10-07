@@ -1,0 +1,25 @@
+2026-07-14 12:22:42,937 | INFO | common.data_loader | Loading Parquet dataset: transactions
+2026-07-14 12:22:42,942 | INFO | FraudGenerator | Starting generator: fraud
+2026-07-14 12:22:42,942 | INFO | FraudGenerator | Starting fraud generation...
+2026-07-14 12:22:42,948 | INFO | FraudGenerator | Actual fraud rate : 0.0000%
+2026-07-14 12:22:42,948 | INFO | FraudGenerator | Fraud generation completed.
+2026-07-14 12:22:42,948 | INFO | FraudGenerator | Generator completed: fraud
+2026-07-14 12:22:42,948 | INFO | FraudGenerator | Total records generated: 0
+2026-07-14 12:26:17,771 | INFO | common.data_loader | Loading Parquet dataset: transactions
+2026-07-14 12:26:17,774 | INFO | FraudGenerator | Starting generator: fraud
+2026-07-14 12:26:17,774 | INFO | FraudGenerator | Starting fraud generation...
+2026-07-14 12:26:17,774 | INFO | FraudGenerator | Transactions processed : 0
+2026-07-14 12:26:17,774 | INFO | FraudGenerator | Fraud cases generated : 0
+2026-07-14 12:26:17,774 | INFO | FraudGenerator | Actual fraud rate : 0.0000%
+2026-07-14 12:26:17,774 | INFO | FraudGenerator | Fraud generation completed.
+2026-07-14 12:26:17,774 | INFO | FraudGenerator | Generator completed: fraud
+2026-07-14 12:26:17,774 | INFO | FraudGenerator | Total records generated: 0
+2026-07-14 12:28:05,110 | INFO | common.data_loader | Loading Parquet dataset: transactions
+2026-07-14 12:28:05,111 | INFO | FraudGenerator | Starting generator: fraud
+2026-07-14 12:28:05,112 | INFO | FraudGenerator | Starting fraud generation...
+2026-07-14 12:28:05,112 | INFO | FraudGenerator | Transactions processed : 0
+2026-07-14 12:28:05,112 | INFO | FraudGenerator | Fraud cases generated : 0
+2026-07-14 12:28:05,112 | INFO | FraudGenerator | Actual fraud rate : 0.0000%
+2026-07-14 12:28:05,112 | INFO | FraudGenerator | Fraud generation completed.
+2026-07-14 12:28:05,112 | INFO | FraudGenerator | Generator completed: fraud
+2026-07-14 12:28:05,112 | INFO | FraudGenerator | Total records generated: 0

@@ -1,0 +1,46 @@
+USE DATABASE ENTERPRISE_BANKING;
+USE SCHEMA STAGING;
+
+CREATE OR REPLACE VIEW STG_BRANCHES AS
+
+SELECT
+    RAW_RECORD:branch_id::VARCHAR
+        AS BRANCH_ID,
+
+    RAW_RECORD:branch_code::VARCHAR
+        AS BRANCH_CODE,
+
+    RAW_RECORD:branch_name::VARCHAR
+        AS BRANCH_NAME,
+
+    RAW_RECORD:branch_type::VARCHAR
+        AS BRANCH_TYPE,
+
+    RAW_RECORD:city::VARCHAR
+        AS CITY,
+
+    RAW_RECORD:state::VARCHAR
+        AS STATE,
+
+    RAW_RECORD:postal_code::VARCHAR
+        AS ZIP_CODE,
+
+    RAW_RECORD:country::VARCHAR
+        AS COUNTRY,
+
+    RAW_RECORD:phone_number::VARCHAR
+        AS PHONE_NUMBER,
+
+    RAW_RECORD:is_active::VARCHAR
+        AS BRANCH_STATUS,
+
+    RAW_RECORD:opened_date::DATE
+        AS OPENED_DATE,
+
+    SOURCE_FILE,
+
+    SOURCE_ROW_NUMBER,
+
+    LOAD_TIMESTAMP
+
+FROM RAW.RAW_BRANCHES;

@@ -1,0 +1,40 @@
+USE DATABASE ENTERPRISE_BANKING;
+USE SCHEMA STAGING;
+
+CREATE OR REPLACE VIEW STG_EMPLOYEES AS
+
+SELECT
+    RAW_RECORD:employee_id::VARCHAR
+        AS EMPLOYEE_ID,
+
+    RAW_RECORD:branch_id::VARCHAR
+        AS BRANCH_ID,
+
+    RAW_RECORD:first_name::VARCHAR
+        AS FIRST_NAME,
+
+    RAW_RECORD:last_name::VARCHAR
+        AS LAST_NAME,
+
+    RAW_RECORD:job_title::VARCHAR
+        AS JOB_TITLE,
+
+    RAW_RECORD:department::VARCHAR
+        AS DEPARTMENT,
+
+    RAW_RECORD:employment_status::VARCHAR
+        AS EMPLOYMENT_STATUS,
+
+    RAW_RECORD:hire_date::DATE
+        AS HIRE_DATE,
+
+    RAW_RECORD:annual_salary::NUMBER(18, 2)
+        AS ANNUAL_SALARY,
+
+    SOURCE_FILE,
+
+    SOURCE_ROW_NUMBER,
+
+    LOAD_TIMESTAMP
+
+FROM RAW.RAW_EMPLOYEES;

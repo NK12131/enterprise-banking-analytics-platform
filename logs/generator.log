@@ -1,0 +1,919 @@
+2026-07-14 12:48:16,268 | INFO | BranchGenerator | Starting generator: branches
+2026-07-14 12:48:16,268 | INFO | BranchGenerator | Generating 500 branches...
+2026-07-14 12:48:16,386 | INFO | BranchGenerator | Writing 500 records to /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/branches/branches_00001.json
+2026-07-14 12:48:16,400 | INFO | BranchGenerator | Generator completed: branches
+2026-07-14 12:48:16,401 | INFO | BranchGenerator | Total records generated: 500
+2026-07-14 12:53:00,490 | INFO | generators.common.data_loader | Loading CSV dataset: branches
+2026-07-14 12:53:00,507 | INFO | EmployeeGenerator | Starting generator: employees
+2026-07-14 12:53:00,511 | ERROR | EmployeeGenerator | Generator failed: employees
+Traceback (most recent call last):
+  File "/Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/generators/common/base_generator.py", line 227, in run
+    self.generate()
+    ~~~~~~~~~~~~~^^
+  File "/Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/generators/references/employee_generator.py", line 152, in generate
+    branch.branch_size
+  File "/Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/.venv/lib/python3.13/site-packages/pandas/core/generic.py", line 6318, in __getattr__
+    return object.__getattribute__(self, name)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+AttributeError: 'Series' object has no attribute 'branch_size'. Did you mean: 'branch_code'?
+2026-07-14 13:06:25,737 | INFO | generators.common.data_loader | Loading CSV dataset: branches
+2026-07-14 13:06:25,750 | INFO | EmployeeGenerator | Starting generator: employees
+2026-07-14 13:06:25,751 | INFO | EmployeeGenerator | Starting employee generation...
+2026-07-14 13:06:25,751 | ERROR | EmployeeGenerator | Generator failed: employees
+Traceback (most recent call last):
+  File "/Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/generators/common/base_generator.py", line 227, in run
+    self.generate()
+    ~~~~~~~~~~~~~^^
+  File "/Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/generators/references/employee_generator.py", line 363, in generate
+    self.resolve_branch_size(
+    ~~~~~~~~~~~~~~~~~~~~~~~~^
+        branch
+        ^^^^^^
+    )
+    ^
+  File "/Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/generators/references/employee_generator.py", line 67, in resolve_branch_size
+    branch_type = branch.get(
+                  ^^^^^^^^^^
+AttributeError: 'str' object has no attribute 'get'
+2026-07-14 13:08:35,542 | INFO | generators.common.data_loader | Loading CSV dataset: branches
+2026-07-14 13:08:35,543 | WARNING | generators.common.data_loader | No CSV files found for dataset: branches
+2026-07-14 13:08:35,543 | INFO | EmployeeGenerator | Starting generator: employees
+2026-07-14 13:08:35,543 | INFO | EmployeeGenerator | Starting employee generation...
+2026-07-14 13:08:35,543 | INFO | EmployeeGenerator | Branches processed : 0
+2026-07-14 13:08:35,543 | INFO | EmployeeGenerator | Employees generated : 0
+2026-07-14 13:08:35,543 | INFO | EmployeeGenerator | Employee generation completed.
+2026-07-14 13:08:35,543 | INFO | EmployeeGenerator | Generator completed: employees
+2026-07-14 13:08:35,543 | INFO | EmployeeGenerator | Total records generated: 0
+2026-07-14 13:10:23,301 | INFO | generators.common.data_loader | Loading Parquet dataset: branches
+2026-07-14 13:10:23,302 | WARNING | generators.common.data_loader | No Parquet files found for dataset: branches
+2026-07-14 13:10:23,302 | INFO | EmployeeGenerator | Starting generator: employees
+2026-07-14 13:10:23,302 | INFO | EmployeeGenerator | Starting employee generation...
+2026-07-14 13:10:23,303 | INFO | EmployeeGenerator | Branches processed : 0
+2026-07-14 13:10:23,303 | INFO | EmployeeGenerator | Employees generated : 0
+2026-07-14 13:10:23,303 | INFO | EmployeeGenerator | Employee generation completed.
+2026-07-14 13:10:23,303 | INFO | EmployeeGenerator | Generator completed: employees
+2026-07-14 13:10:23,303 | INFO | EmployeeGenerator | Total records generated: 0
+2026-07-14 13:13:16,484 | INFO | generators.common.data_loader | Loading Parquet dataset: branches
+2026-07-14 13:13:16,485 | INFO | generators.common.data_loader | Dataset directory: /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/branches
+2026-07-14 13:13:16,486 | INFO | generators.common.data_loader | Parquet files found: 0
+2026-07-14 13:13:16,486 | WARNING | generators.common.data_loader | No Parquet files found in: /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/branches
+2026-07-14 13:13:16,486 | INFO | EmployeeGenerator | Starting generator: employees
+2026-07-14 13:13:16,486 | INFO | EmployeeGenerator | Starting employee generation...
+2026-07-14 13:13:16,486 | INFO | EmployeeGenerator | Branches processed : 0
+2026-07-14 13:13:16,486 | INFO | EmployeeGenerator | Employees generated : 0
+2026-07-14 13:13:16,486 | INFO | EmployeeGenerator | Employee generation completed.
+2026-07-14 13:13:16,487 | INFO | EmployeeGenerator | Generator completed: employees
+2026-07-14 13:13:16,487 | INFO | EmployeeGenerator | Total records generated: 0
+2026-07-14 13:15:11,001 | INFO | BranchGenerator | Starting generator: branches
+2026-07-14 13:15:11,002 | INFO | BranchGenerator | Generating 500 branches...
+2026-07-14 13:15:11,111 | INFO | BranchGenerator | Writing 500 records to /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/branches/branches_00001.json
+2026-07-14 13:15:11,130 | INFO | BranchGenerator | Generator completed: branches
+2026-07-14 13:15:11,130 | INFO | BranchGenerator | Total records generated: 500
+2026-07-14 13:15:20,017 | INFO | generators.common.data_loader | Loading Parquet dataset: branches
+2026-07-14 13:15:20,017 | INFO | generators.common.data_loader | Dataset directory: /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/branches
+2026-07-14 13:15:20,018 | INFO | generators.common.data_loader | Parquet files found: 0
+2026-07-14 13:15:20,018 | WARNING | generators.common.data_loader | No Parquet files found in: /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/branches
+2026-07-14 13:15:20,018 | INFO | EmployeeGenerator | Starting generator: employees
+2026-07-14 13:15:20,018 | INFO | EmployeeGenerator | Starting employee generation...
+2026-07-14 13:15:20,018 | INFO | EmployeeGenerator | Branches processed : 0
+2026-07-14 13:15:20,018 | INFO | EmployeeGenerator | Employees generated : 0
+2026-07-14 13:15:20,018 | INFO | EmployeeGenerator | Employee generation completed.
+2026-07-14 13:15:20,019 | INFO | EmployeeGenerator | Generator completed: employees
+2026-07-14 13:15:20,019 | INFO | EmployeeGenerator | Total records generated: 0
+2026-07-14 13:19:02,222 | INFO | BranchGenerator | Starting generator: branches
+2026-07-14 13:19:02,222 | INFO | BranchGenerator | Generating 500 branches...
+2026-07-14 13:19:02,332 | INFO | BranchGenerator | Writing 500 records to /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/branches/branches_00001.parquet
+2026-07-14 13:19:02,332 | ERROR | BranchGenerator | Generator failed: branches
+Traceback (most recent call last):
+  File "/Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/generators/common/base_generator.py", line 223, in run
+    self.flush()
+    ~~~~~~~~~~^^
+  File "/Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/generators/common/base_generator.py", line 191, in flush
+    dataframe = pd.DataFrame(
+                ^^
+NameError: name 'pd' is not defined. Did you mean: 'id'?
+2026-07-14 13:19:35,654 | INFO | BranchGenerator | Starting generator: branches
+2026-07-14 13:19:35,654 | INFO | BranchGenerator | Generating 500 branches...
+2026-07-14 13:19:35,755 | INFO | BranchGenerator | Writing 500 records to /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/branches/branches_00001.parquet
+2026-07-14 13:19:37,503 | INFO | BranchGenerator | Generator completed: branches
+2026-07-14 13:19:37,503 | INFO | BranchGenerator | Total records generated: 500
+2026-07-14 13:19:45,272 | INFO | generators.common.data_loader | Loading Parquet dataset: branches
+2026-07-14 13:19:45,272 | INFO | generators.common.data_loader | Dataset directory: /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/branches
+2026-07-14 13:19:45,273 | INFO | generators.common.data_loader | Parquet files found: 1
+2026-07-14 13:19:45,273 | INFO | generators.common.data_loader | Reading Parquet file: /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/branches/branches_00001.parquet
+2026-07-14 13:19:47,786 | INFO | generators.common.data_loader | Loaded 500 records from dataset: branches
+2026-07-14 13:19:47,786 | INFO | EmployeeGenerator | Starting generator: employees
+2026-07-14 13:19:47,786 | INFO | EmployeeGenerator | Starting employee generation...
+2026-07-14 13:19:47,787 | ERROR | EmployeeGenerator | Generator failed: employees
+Traceback (most recent call last):
+  File "/Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/generators/common/base_generator.py", line 222, in run
+    self.generate()
+    ~~~~~~~~~~~~~^^
+  File "/Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/generators/references/employee_generator.py", line 401, in generate
+    self.add(employee)
+    ~~~~~~~~^^^^^^^^^^
+  File "/Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/generators/common/base_generator.py", line 103, in add
+    self.validate(record)
+    ~~~~~~~~~~~~~^^^^^^^^
+  File "/Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/generators/common/base_generator.py", line 127, in validate
+    result = self.VALIDATOR(record)
+TypeError: validate_employee() takes 1 positional argument but 2 were given
+2026-07-14 13:23:08,662 | INFO | generators.common.data_loader | Loading Parquet dataset: branches
+2026-07-14 13:23:08,663 | INFO | generators.common.data_loader | Dataset directory: /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/branches
+2026-07-14 13:23:08,663 | INFO | generators.common.data_loader | Parquet files found: 1
+2026-07-14 13:23:08,664 | INFO | generators.common.data_loader | Reading Parquet file: /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/branches/branches_00001.parquet
+2026-07-14 13:23:08,805 | INFO | generators.common.data_loader | Loaded 500 records from dataset: branches
+2026-07-14 13:23:08,805 | INFO | EmployeeGenerator | Starting generator: employees
+2026-07-14 13:23:08,805 | INFO | EmployeeGenerator | Starting employee generation...
+2026-07-14 13:23:10,449 | INFO | EmployeeGenerator | Branches processed : 500
+2026-07-14 13:23:10,449 | INFO | EmployeeGenerator | Employees generated : 8,290
+2026-07-14 13:23:10,449 | INFO | EmployeeGenerator | Employee generation completed.
+2026-07-14 13:23:10,449 | INFO | EmployeeGenerator | Writing 8,290 records to /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/employees/employees_00001.parquet
+2026-07-14 13:23:10,519 | INFO | EmployeeGenerator | Generator completed: employees
+2026-07-14 13:23:10,519 | INFO | EmployeeGenerator | Total records generated: 8290
+2026-07-14 13:24:44,374 | INFO | generators.common.data_loader | Loading Parquet dataset: branches
+2026-07-14 13:24:44,375 | INFO | generators.common.data_loader | Dataset directory: /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/branches
+2026-07-14 13:24:44,375 | INFO | generators.common.data_loader | Parquet files found: 1
+2026-07-14 13:24:44,375 | INFO | generators.common.data_loader | Reading Parquet file: /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/branches/branches_00001.parquet
+2026-07-14 13:24:44,502 | INFO | generators.common.data_loader | Loaded 500 records from dataset: branches
+2026-07-14 13:24:44,502 | INFO | CustomerGenerator | Starting generator: customers
+2026-07-14 13:24:44,502 | INFO | CustomerGenerator | Generating 100000 customers...
+2026-07-14 13:24:44,503 | ERROR | CustomerGenerator | Generator failed: customers
+Traceback (most recent call last):
+  File "/Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/generators/common/base_generator.py", line 224, in run
+    self.generate()
+    ~~~~~~~~~~~~~^^
+  File "/Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/generators/masters/customer_generator.py", line 276, in generate
+    self.build_customer(
+    ~~~~~~~~~~~~~~~~~~~^
+        sequence
+        ^^^^^^^^
+    )
+    ^
+  File "/Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/generators/masters/customer_generator.py", line 112, in build_customer
+    branch = self.branches.sample(1).iloc[0]
+             ^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'list' object has no attribute 'sample'
+2026-07-14 13:31:21,699 | INFO | generators.common.data_loader | Loading Parquet dataset: branches
+2026-07-14 13:31:21,700 | INFO | generators.common.data_loader | Dataset directory: /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/branches
+2026-07-14 13:31:21,701 | INFO | generators.common.data_loader | Parquet files found: 1
+2026-07-14 13:31:21,701 | INFO | generators.common.data_loader | Reading Parquet file: /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/branches/branches_00001.parquet
+2026-07-14 13:31:21,812 | INFO | generators.common.data_loader | Loaded 500 records from dataset: branches
+2026-07-14 13:31:21,812 | INFO | CustomerGenerator | Starting generator: customers
+2026-07-14 13:31:21,812 | INFO | CustomerGenerator | Generating 100,000 customers...
+2026-07-14 13:31:25,692 | INFO | CustomerGenerator | Generated 10,000 customers...
+2026-07-14 13:31:29,539 | INFO | CustomerGenerator | Generated 20,000 customers...
+2026-07-14 13:31:33,819 | INFO | CustomerGenerator | Generated 30,000 customers...
+2026-07-14 13:31:37,748 | INFO | CustomerGenerator | Generated 40,000 customers...
+2026-07-14 13:31:41,566 | INFO | CustomerGenerator | Writing 50,000 records to /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/customers/customers_00001.parquet
+2026-07-14 13:31:42,008 | INFO | CustomerGenerator | Generated 50,000 customers...
+2026-07-14 13:31:45,991 | INFO | CustomerGenerator | Generated 60,000 customers...
+2026-07-14 13:31:49,816 | INFO | CustomerGenerator | Generated 70,000 customers...
+2026-07-14 13:31:53,939 | INFO | CustomerGenerator | Generated 80,000 customers...
+2026-07-14 13:31:58,668 | INFO | CustomerGenerator | Generated 90,000 customers...
+2026-07-14 13:32:03,274 | INFO | CustomerGenerator | Writing 50,000 records to /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/customers/customers_00002.parquet
+2026-07-14 13:32:03,709 | INFO | CustomerGenerator | Generated 100,000 customers...
+2026-07-14 13:32:03,709 | INFO | CustomerGenerator | Customers generated : 100,000
+2026-07-14 13:32:03,709 | INFO | CustomerGenerator | Customer generation completed.
+2026-07-14 13:32:03,709 | INFO | CustomerGenerator | Generator completed: customers
+2026-07-14 13:32:03,709 | INFO | CustomerGenerator | Total records generated: 100000
+2026-07-14 13:34:11,314 | INFO | generators.common.data_loader | Loading Parquet dataset: customers
+2026-07-14 13:34:11,315 | INFO | generators.common.data_loader | Dataset directory: /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/customers
+2026-07-14 13:34:11,315 | INFO | generators.common.data_loader | Parquet files found: 2
+2026-07-14 13:34:11,315 | INFO | generators.common.data_loader | Reading Parquet file: /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/customers/customers_00001.parquet
+2026-07-14 13:34:12,509 | INFO | generators.common.data_loader | Reading Parquet file: /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/customers/customers_00002.parquet
+2026-07-14 13:34:13,492 | INFO | generators.common.data_loader | Loaded 100000 records from dataset: customers
+2026-07-14 13:34:13,496 | INFO | AccountGenerator | Starting generator: accounts
+2026-07-14 13:34:13,496 | INFO | AccountGenerator | Generating customer accounts...
+2026-07-14 13:34:13,496 | ERROR | AccountGenerator | Generator failed: accounts
+Traceback (most recent call last):
+  File "/Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/generators/common/base_generator.py", line 224, in run
+    self.generate()
+    ~~~~~~~~~~~~~^^
+  File "/Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/generators/masters/account_generator.py", line 203, in generate
+    for account_type in profile["accounts"]:
+                        ~~~~~~~^^^^^^^^^^^^
+KeyError: 'accounts'
+2026-07-14 13:38:05,093 | INFO | generators.common.data_loader | Loading Parquet dataset: customers
+2026-07-14 13:38:05,093 | INFO | generators.common.data_loader | Dataset directory: /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/customers
+2026-07-14 13:38:05,094 | INFO | generators.common.data_loader | Parquet files found: 2
+2026-07-14 13:38:05,094 | INFO | generators.common.data_loader | Reading Parquet file: /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/customers/customers_00001.parquet
+2026-07-14 13:38:06,019 | INFO | generators.common.data_loader | Reading Parquet file: /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/customers/customers_00002.parquet
+2026-07-14 13:38:06,836 | INFO | generators.common.data_loader | Loaded 100000 records from dataset: customers
+2026-07-14 13:38:06,840 | INFO | AccountGenerator | Starting generator: accounts
+2026-07-14 13:38:06,840 | INFO | AccountGenerator | Generating customer accounts...
+2026-07-14 13:38:06,840 | ERROR | AccountGenerator | Generator failed: accounts
+Traceback (most recent call last):
+  File "/Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/generators/common/base_generator.py", line 224, in run
+    self.generate()
+    ~~~~~~~~~~~~~^^
+  File "/Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/generators/masters/account_generator.py", line 410, in generate
+    self.add(account)
+    ~~~~~~~~^^^^^^^^^
+  File "/Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/generators/common/base_generator.py", line 103, in add
+    self.validate(record)
+    ~~~~~~~~~~~~~^^^^^^^^
+  File "/Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/generators/common/base_generator.py", line 129, in validate
+    result = validator(record)
+  File "/Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/generators/common/validators.py", line 99, in validate_account
+    record["balance"],
+    ~~~~~~^^^^^^^^^^^
+KeyError: 'balance'
+2026-07-14 13:41:25,440 | INFO | generators.common.data_loader | Loading Parquet dataset: customers
+2026-07-14 13:41:25,441 | INFO | generators.common.data_loader | Dataset directory: /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/customers
+2026-07-14 13:41:25,441 | INFO | generators.common.data_loader | Parquet files found: 2
+2026-07-14 13:41:25,441 | INFO | generators.common.data_loader | Reading Parquet file: /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/customers/customers_00001.parquet
+2026-07-14 13:41:26,357 | INFO | generators.common.data_loader | Reading Parquet file: /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/customers/customers_00002.parquet
+2026-07-14 13:41:27,274 | INFO | generators.common.data_loader | Loaded 100000 records from dataset: customers
+2026-07-14 13:41:27,278 | INFO | AccountGenerator | Starting generator: accounts
+2026-07-14 13:41:27,278 | INFO | AccountGenerator | Generating customer accounts...
+2026-07-14 13:41:27,954 | INFO | AccountGenerator | Writing 50,000 records to /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/accounts/accounts_00001.parquet
+2026-07-14 13:41:28,158 | INFO | AccountGenerator | Generated 50,000 accounts...
+2026-07-14 13:41:28,678 | INFO | AccountGenerator | Writing 50,000 records to /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/accounts/accounts_00002.parquet
+2026-07-14 13:41:28,865 | INFO | AccountGenerator | Generated 100,000 accounts...
+2026-07-14 13:41:29,407 | INFO | AccountGenerator | Writing 50,000 records to /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/accounts/accounts_00003.parquet
+2026-07-14 13:41:29,585 | INFO | AccountGenerator | Generated 150,000 accounts...
+2026-07-14 13:41:29,917 | INFO | AccountGenerator | Customers processed : 100,000
+2026-07-14 13:41:29,917 | INFO | AccountGenerator | Accounts generated : 180,164
+2026-07-14 13:41:29,917 | INFO | AccountGenerator | Account generation completed.
+2026-07-14 13:41:29,917 | INFO | AccountGenerator | Writing 30,164 records to /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/accounts/accounts_00004.parquet
+2026-07-14 13:41:30,024 | INFO | AccountGenerator | Generator completed: accounts
+2026-07-14 13:41:30,024 | INFO | AccountGenerator | Total records generated: 180164
+2026-07-14 13:41:49,810 | INFO | generators.common.data_loader | Loading Parquet dataset: customers
+2026-07-14 13:41:49,810 | INFO | generators.common.data_loader | Dataset directory: /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/customers
+2026-07-14 13:41:49,810 | INFO | generators.common.data_loader | Parquet files found: 2
+2026-07-14 13:41:49,810 | INFO | generators.common.data_loader | Reading Parquet file: /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/customers/customers_00001.parquet
+2026-07-14 13:41:50,676 | INFO | generators.common.data_loader | Reading Parquet file: /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/customers/customers_00002.parquet
+2026-07-14 13:41:51,492 | INFO | generators.common.data_loader | Loaded 100000 records from dataset: customers
+2026-07-14 13:41:51,495 | INFO | generators.common.data_loader | Loading Parquet dataset: accounts
+2026-07-14 13:41:51,496 | INFO | generators.common.data_loader | Dataset directory: /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/accounts
+2026-07-14 13:41:51,496 | INFO | generators.common.data_loader | Parquet files found: 4
+2026-07-14 13:41:51,496 | INFO | generators.common.data_loader | Reading Parquet file: /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/accounts/accounts_00001.parquet
+2026-07-14 13:41:52,035 | INFO | generators.common.data_loader | Reading Parquet file: /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/accounts/accounts_00002.parquet
+2026-07-14 13:41:52,475 | INFO | generators.common.data_loader | Reading Parquet file: /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/accounts/accounts_00003.parquet
+2026-07-14 13:41:52,905 | INFO | generators.common.data_loader | Reading Parquet file: /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/accounts/accounts_00004.parquet
+2026-07-14 13:41:53,177 | INFO | generators.common.data_loader | Loaded 180164 records from dataset: accounts
+2026-07-14 13:41:53,179 | INFO | LoanGenerator | Starting generator: loans
+2026-07-14 13:41:53,179 | INFO | LoanGenerator | Starting loan generation...
+2026-07-14 13:41:53,179 | ERROR | LoanGenerator | Generator failed: loans
+Traceback (most recent call last):
+  File "/Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/generators/common/base_generator.py", line 224, in run
+    self.generate()
+    ~~~~~~~~~~~~~^^
+  File "/Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/generators/masters/loan_generator.py", line 586, in generate
+    loan = self.build_loan(customer)
+  File "/Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/generators/masters/loan_generator.py", line 402, in build_loan
+    accounts = self.customer_accounts(
+        customer["customer_id"]
+    )
+  File "/Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/generators/masters/loan_generator.py", line 120, in customer_accounts
+    self.accounts.customer_id
+AttributeError: 'list' object has no attribute 'customer_id'
+2026-07-14 13:47:16,206 | INFO | generators.common.data_loader | Loading Parquet dataset: customers
+2026-07-14 13:47:16,206 | INFO | generators.common.data_loader | Dataset directory: /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/customers
+2026-07-14 13:47:16,207 | INFO | generators.common.data_loader | Parquet files found: 2
+2026-07-14 13:47:16,207 | INFO | generators.common.data_loader | Reading Parquet file: /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/customers/customers_00001.parquet
+2026-07-14 13:47:17,265 | INFO | generators.common.data_loader | Reading Parquet file: /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/customers/customers_00002.parquet
+2026-07-14 13:47:18,183 | INFO | generators.common.data_loader | Loaded 100000 records from dataset: customers
+2026-07-14 13:47:18,187 | INFO | generators.common.data_loader | Loading Parquet dataset: accounts
+2026-07-14 13:47:18,187 | INFO | generators.common.data_loader | Dataset directory: /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/accounts
+2026-07-14 13:47:18,187 | INFO | generators.common.data_loader | Parquet files found: 4
+2026-07-14 13:47:18,187 | INFO | generators.common.data_loader | Reading Parquet file: /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/accounts/accounts_00001.parquet
+2026-07-14 13:47:18,778 | INFO | generators.common.data_loader | Reading Parquet file: /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/accounts/accounts_00002.parquet
+2026-07-14 13:47:19,219 | INFO | generators.common.data_loader | Reading Parquet file: /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/accounts/accounts_00003.parquet
+2026-07-14 13:47:19,679 | INFO | generators.common.data_loader | Reading Parquet file: /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/accounts/accounts_00004.parquet
+2026-07-14 13:47:19,982 | INFO | generators.common.data_loader | Loaded 180164 records from dataset: accounts
+2026-07-14 13:47:20,218 | INFO | LoanGenerator | Starting generator: loans
+2026-07-14 13:47:20,218 | INFO | LoanGenerator | Starting loan generation...
+2026-07-14 13:47:20,218 | ERROR | LoanGenerator | Generator failed: loans
+Traceback (most recent call last):
+  File "/Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/generators/common/base_generator.py", line 224, in run
+    self.generate()
+    ~~~~~~~~~~~~~^^
+  File "/Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/generators/masters/loan_generator.py", line 644, in generate
+    self.add(
+    ~~~~~~~~^
+        loan
+        ^^^^
+    )
+    ^
+  File "/Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/generators/common/base_generator.py", line 103, in add
+    self.validate(record)
+    ~~~~~~~~~~~~~^^^^^^^^
+  File "/Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/generators/common/base_generator.py", line 129, in validate
+    result = validator(record)
+  File "/Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/generators/common/validators.py", line 330, in validate_loan
+    record["loan_amount"],
+    ~~~~~~^^^^^^^^^^^^^^^
+KeyError: 'loan_amount'
+2026-07-14 13:52:57,517 | INFO | generators.common.data_loader | Loading Parquet dataset: customers
+2026-07-14 13:52:57,517 | INFO | generators.common.data_loader | Dataset directory: /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/customers
+2026-07-14 13:52:57,518 | INFO | generators.common.data_loader | Parquet files found: 2
+2026-07-14 13:52:57,518 | INFO | generators.common.data_loader | Reading Parquet file: /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/customers/customers_00001.parquet
+2026-07-14 13:52:58,477 | INFO | generators.common.data_loader | Reading Parquet file: /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/customers/customers_00002.parquet
+2026-07-14 13:52:59,361 | INFO | generators.common.data_loader | Loaded 100000 records from dataset: customers
+2026-07-14 13:52:59,365 | INFO | generators.common.data_loader | Loading Parquet dataset: accounts
+2026-07-14 13:52:59,365 | INFO | generators.common.data_loader | Dataset directory: /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/accounts
+2026-07-14 13:52:59,365 | INFO | generators.common.data_loader | Parquet files found: 4
+2026-07-14 13:52:59,365 | INFO | generators.common.data_loader | Reading Parquet file: /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/accounts/accounts_00001.parquet
+2026-07-14 13:52:59,960 | INFO | generators.common.data_loader | Reading Parquet file: /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/accounts/accounts_00002.parquet
+2026-07-14 13:53:00,468 | INFO | generators.common.data_loader | Reading Parquet file: /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/accounts/accounts_00003.parquet
+2026-07-14 13:53:00,952 | INFO | generators.common.data_loader | Reading Parquet file: /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/accounts/accounts_00004.parquet
+2026-07-14 13:53:01,256 | INFO | generators.common.data_loader | Loaded 180164 records from dataset: accounts
+2026-07-14 13:53:01,491 | INFO | LoanGenerator | Starting generator: loans
+2026-07-14 13:53:01,491 | INFO | LoanGenerator | Starting loan generation...
+2026-07-14 13:53:01,726 | INFO | LoanGenerator | Generated 10,000 loans...
+2026-07-14 13:53:01,931 | INFO | LoanGenerator | Generated 20,000 loans...
+2026-07-14 13:53:02,091 | INFO | LoanGenerator | Customers processed : 100,000
+2026-07-14 13:53:02,091 | INFO | LoanGenerator | Loans generated : 27,922
+2026-07-14 13:53:02,091 | INFO | LoanGenerator | Customers skipped : 24
+2026-07-14 13:53:02,091 | INFO | LoanGenerator | Loan generation completed.
+2026-07-14 13:53:02,091 | INFO | LoanGenerator | Writing 27,922 records to /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/loans/loans_00001.parquet
+2026-07-14 13:53:02,249 | INFO | LoanGenerator | Generator completed: loans
+2026-07-14 13:53:02,249 | INFO | LoanGenerator | Total records generated: 27922
+2026-07-14 13:58:29,688 | INFO | generators.common.data_loader | Loading Parquet dataset: customers
+2026-07-14 13:58:29,689 | INFO | generators.common.data_loader | Dataset directory: /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/customers
+2026-07-14 13:58:29,689 | INFO | generators.common.data_loader | Parquet files found: 2
+2026-07-14 13:58:29,689 | INFO | generators.common.data_loader | Reading Parquet file: /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/customers/customers_00001.parquet
+2026-07-14 13:58:30,714 | INFO | generators.common.data_loader | Reading Parquet file: /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/customers/customers_00002.parquet
+2026-07-14 13:58:31,546 | INFO | generators.common.data_loader | Loaded 100000 records from dataset: customers
+2026-07-14 13:58:31,549 | INFO | generators.common.data_loader | Loading Parquet dataset: accounts
+2026-07-14 13:58:31,549 | INFO | generators.common.data_loader | Dataset directory: /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/accounts
+2026-07-14 13:58:31,550 | INFO | generators.common.data_loader | Parquet files found: 4
+2026-07-14 13:58:31,550 | INFO | generators.common.data_loader | Reading Parquet file: /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/accounts/accounts_00001.parquet
+2026-07-14 13:58:32,119 | INFO | generators.common.data_loader | Reading Parquet file: /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/accounts/accounts_00002.parquet
+2026-07-14 13:58:32,588 | INFO | generators.common.data_loader | Reading Parquet file: /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/accounts/accounts_00003.parquet
+2026-07-14 13:58:33,044 | INFO | generators.common.data_loader | Reading Parquet file: /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/accounts/accounts_00004.parquet
+2026-07-14 13:58:33,335 | INFO | generators.common.data_loader | Loaded 180164 records from dataset: accounts
+2026-07-14 13:58:33,571 | INFO | CreditCardGenerator | Starting generator: credit_cards
+2026-07-14 13:58:33,571 | INFO | CreditCardGenerator | Starting credit card generation...
+2026-07-14 13:58:33,745 | INFO | CreditCardGenerator | Generated 10,000 credit cards...
+2026-07-14 13:58:33,903 | INFO | CreditCardGenerator | Generated 20,000 credit cards...
+2026-07-14 13:58:34,066 | INFO | CreditCardGenerator | Generated 30,000 credit cards...
+2026-07-14 13:58:34,232 | INFO | CreditCardGenerator | Generated 40,000 credit cards...
+2026-07-14 13:58:34,352 | INFO | CreditCardGenerator | Customers processed : 100,000
+2026-07-14 13:58:34,353 | INFO | CreditCardGenerator | Credit cards generated : 47,525
+2026-07-14 13:58:34,353 | INFO | CreditCardGenerator | Customers skipped : 483
+2026-07-14 13:58:34,353 | INFO | CreditCardGenerator | Credit card generation completed.
+2026-07-14 13:58:34,353 | INFO | CreditCardGenerator | Writing 47,525 records to /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/credit_cards/credit_cards_00001.parquet
+2026-07-14 13:58:34,604 | INFO | CreditCardGenerator | Generator completed: credit_cards
+2026-07-14 13:58:34,605 | INFO | CreditCardGenerator | Total records generated: 47525
+2026-07-14 14:02:09,668 | INFO | generators.common.data_loader | Loading Parquet dataset: accounts
+2026-07-14 14:02:09,668 | INFO | generators.common.data_loader | Dataset directory: /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/accounts
+2026-07-14 14:02:09,669 | INFO | generators.common.data_loader | Parquet files found: 4
+2026-07-14 14:02:09,669 | INFO | generators.common.data_loader | Reading Parquet file: /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/accounts/accounts_00001.parquet
+2026-07-14 14:02:10,306 | INFO | generators.common.data_loader | Reading Parquet file: /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/accounts/accounts_00002.parquet
+2026-07-14 14:02:10,794 | INFO | generators.common.data_loader | Reading Parquet file: /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/accounts/accounts_00003.parquet
+2026-07-14 14:02:11,345 | INFO | generators.common.data_loader | Reading Parquet file: /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/accounts/accounts_00004.parquet
+2026-07-14 14:02:11,638 | INFO | generators.common.data_loader | Loaded 180164 records from dataset: accounts
+2026-07-14 14:02:11,639 | INFO | TransactionGenerator | Starting generator: transactions
+2026-07-14 14:02:11,639 | INFO | TransactionGenerator | Starting transaction generation...
+2026-07-14 14:02:11,639 | ERROR | TransactionGenerator | Generator failed: transactions
+Traceback (most recent call last):
+  File "/Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/generators/common/base_generator.py", line 224, in run
+    self.generate()
+    ~~~~~~~~~~~~~^^
+  File "/Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/generators/transactions/transaction_generator.py", line 520, in generate
+    self.add(
+    ~~~~~~~~^
+        transaction
+        ^^^^^^^^^^^
+    )
+    ^
+  File "/Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/generators/common/base_generator.py", line 103, in add
+    self.validate(record)
+    ~~~~~~~~~~~~~^^^^^^^^
+  File "/Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/generators/common/base_generator.py", line 129, in validate
+    result = validator(record)
+  File "/Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/generators/common/validators.py", line 311, in validate_transaction
+    record["amount"],
+    ~~~~~~^^^^^^^^^^
+KeyError: 'amount'
+2026-07-14 14:04:56,934 | INFO | generators.common.data_loader | Loading Parquet dataset: accounts
+2026-07-14 14:04:56,935 | INFO | generators.common.data_loader | Dataset directory: /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/accounts
+2026-07-14 14:04:56,935 | INFO | generators.common.data_loader | Parquet files found: 4
+2026-07-14 14:04:56,936 | INFO | generators.common.data_loader | Reading Parquet file: /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/accounts/accounts_00001.parquet
+2026-07-14 14:04:57,553 | INFO | generators.common.data_loader | Reading Parquet file: /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/accounts/accounts_00002.parquet
+2026-07-14 14:04:58,078 | INFO | generators.common.data_loader | Reading Parquet file: /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/accounts/accounts_00003.parquet
+2026-07-14 14:04:58,683 | INFO | generators.common.data_loader | Reading Parquet file: /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/accounts/accounts_00004.parquet
+2026-07-14 14:04:58,967 | INFO | generators.common.data_loader | Loaded 180164 records from dataset: accounts
+2026-07-14 14:04:58,968 | INFO | TransactionGenerator | Starting generator: transactions
+2026-07-14 14:04:58,968 | INFO | TransactionGenerator | Starting transaction generation...
+2026-07-14 14:04:59,603 | INFO | TransactionGenerator | Writing 50,000 records to /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/transactions/transactions_00001.parquet
+2026-07-14 14:05:00,471 | INFO | TransactionGenerator | Writing 50,000 records to /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/transactions/transactions_00002.parquet
+2026-07-14 14:05:00,722 | INFO | TransactionGenerator | Generated 100,000 transactions...
+2026-07-14 14:05:01,336 | INFO | TransactionGenerator | Writing 50,000 records to /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/transactions/transactions_00003.parquet
+2026-07-14 14:05:02,288 | INFO | TransactionGenerator | Writing 50,000 records to /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/transactions/transactions_00004.parquet
+2026-07-14 14:05:02,548 | INFO | TransactionGenerator | Generated 200,000 transactions...
+2026-07-14 14:05:03,164 | INFO | TransactionGenerator | Writing 50,000 records to /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/transactions/transactions_00005.parquet
+2026-07-14 14:05:03,989 | INFO | TransactionGenerator | Writing 50,000 records to /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/transactions/transactions_00006.parquet
+2026-07-14 14:05:04,196 | INFO | TransactionGenerator | Generated 300,000 transactions...
+2026-07-14 14:05:04,819 | INFO | TransactionGenerator | Writing 50,000 records to /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/transactions/transactions_00007.parquet
+2026-07-14 14:05:05,650 | INFO | TransactionGenerator | Writing 50,000 records to /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/transactions/transactions_00008.parquet
+2026-07-14 14:05:05,868 | INFO | TransactionGenerator | Generated 400,000 transactions...
+2026-07-14 14:05:06,468 | INFO | TransactionGenerator | Writing 50,000 records to /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/transactions/transactions_00009.parquet
+2026-07-14 14:05:07,290 | INFO | TransactionGenerator | Writing 50,000 records to /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/transactions/transactions_00010.parquet
+2026-07-14 14:05:07,507 | INFO | TransactionGenerator | Generated 500,000 transactions...
+2026-07-14 14:05:08,112 | INFO | TransactionGenerator | Writing 50,000 records to /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/transactions/transactions_00011.parquet
+2026-07-14 14:05:08,942 | INFO | TransactionGenerator | Writing 50,000 records to /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/transactions/transactions_00012.parquet
+2026-07-14 14:05:09,163 | INFO | TransactionGenerator | Generated 600,000 transactions...
+2026-07-14 14:05:09,794 | INFO | TransactionGenerator | Writing 50,000 records to /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/transactions/transactions_00013.parquet
+2026-07-14 14:05:10,607 | INFO | TransactionGenerator | Writing 50,000 records to /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/transactions/transactions_00014.parquet
+2026-07-14 14:05:10,825 | INFO | TransactionGenerator | Generated 700,000 transactions...
+2026-07-14 14:05:11,423 | INFO | TransactionGenerator | Writing 50,000 records to /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/transactions/transactions_00015.parquet
+2026-07-14 14:05:12,477 | INFO | TransactionGenerator | Writing 50,000 records to /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/transactions/transactions_00016.parquet
+2026-07-14 14:05:12,807 | INFO | TransactionGenerator | Generated 800,000 transactions...
+2026-07-14 14:05:13,492 | INFO | TransactionGenerator | Writing 50,000 records to /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/transactions/transactions_00017.parquet
+2026-07-14 14:05:14,308 | INFO | TransactionGenerator | Writing 50,000 records to /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/transactions/transactions_00018.parquet
+2026-07-14 14:05:14,524 | INFO | TransactionGenerator | Generated 900,000 transactions...
+2026-07-14 14:05:15,139 | INFO | TransactionGenerator | Writing 50,000 records to /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/transactions/transactions_00019.parquet
+2026-07-14 14:05:15,951 | INFO | TransactionGenerator | Writing 50,000 records to /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/transactions/transactions_00020.parquet
+2026-07-14 14:05:16,172 | INFO | TransactionGenerator | Generated 1,000,000 transactions...
+2026-07-14 14:05:16,794 | INFO | TransactionGenerator | Writing 50,000 records to /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/transactions/transactions_00021.parquet
+2026-07-14 14:05:17,703 | INFO | TransactionGenerator | Writing 50,000 records to /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/transactions/transactions_00022.parquet
+2026-07-14 14:05:17,939 | INFO | TransactionGenerator | Generated 1,100,000 transactions...
+2026-07-14 14:05:18,631 | INFO | TransactionGenerator | Writing 50,000 records to /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/transactions/transactions_00023.parquet
+2026-07-14 14:05:19,530 | INFO | TransactionGenerator | Writing 50,000 records to /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/transactions/transactions_00024.parquet
+2026-07-14 14:05:19,761 | INFO | TransactionGenerator | Generated 1,200,000 transactions...
+2026-07-14 14:05:20,417 | INFO | TransactionGenerator | Writing 50,000 records to /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/transactions/transactions_00025.parquet
+2026-07-14 14:05:21,314 | INFO | TransactionGenerator | Writing 50,000 records to /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/transactions/transactions_00026.parquet
+2026-07-14 14:05:21,558 | INFO | TransactionGenerator | Generated 1,300,000 transactions...
+2026-07-14 14:05:22,219 | INFO | TransactionGenerator | Writing 50,000 records to /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/transactions/transactions_00027.parquet
+2026-07-14 14:05:23,124 | INFO | TransactionGenerator | Writing 50,000 records to /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/transactions/transactions_00028.parquet
+2026-07-14 14:05:23,345 | INFO | TransactionGenerator | Generated 1,400,000 transactions...
+2026-07-14 14:05:24,413 | INFO | TransactionGenerator | Writing 50,000 records to /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/transactions/transactions_00029.parquet
+2026-07-14 14:05:25,308 | INFO | TransactionGenerator | Writing 50,000 records to /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/transactions/transactions_00030.parquet
+2026-07-14 14:05:25,541 | INFO | TransactionGenerator | Generated 1,500,000 transactions...
+2026-07-14 14:05:26,196 | INFO | TransactionGenerator | Writing 50,000 records to /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/transactions/transactions_00031.parquet
+2026-07-14 14:05:27,197 | INFO | TransactionGenerator | Writing 50,000 records to /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/transactions/transactions_00032.parquet
+2026-07-14 14:05:27,464 | INFO | TransactionGenerator | Generated 1,600,000 transactions...
+2026-07-14 14:05:28,224 | INFO | TransactionGenerator | Writing 50,000 records to /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/transactions/transactions_00033.parquet
+2026-07-14 14:05:29,240 | INFO | TransactionGenerator | Writing 50,000 records to /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/transactions/transactions_00034.parquet
+2026-07-14 14:05:29,514 | INFO | TransactionGenerator | Generated 1,700,000 transactions...
+2026-07-14 14:05:30,226 | INFO | TransactionGenerator | Writing 50,000 records to /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/transactions/transactions_00035.parquet
+2026-07-14 14:05:31,109 | INFO | TransactionGenerator | Writing 50,000 records to /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/transactions/transactions_00036.parquet
+2026-07-14 14:05:31,331 | INFO | TransactionGenerator | Generated 1,800,000 transactions...
+2026-07-14 14:05:31,961 | INFO | TransactionGenerator | Writing 50,000 records to /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/transactions/transactions_00037.parquet
+2026-07-14 14:05:32,815 | INFO | TransactionGenerator | Writing 50,000 records to /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/transactions/transactions_00038.parquet
+2026-07-14 14:05:33,032 | INFO | TransactionGenerator | Generated 1,900,000 transactions...
+2026-07-14 14:05:33,660 | INFO | TransactionGenerator | Writing 50,000 records to /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/transactions/transactions_00039.parquet
+2026-07-14 14:05:34,500 | INFO | TransactionGenerator | Writing 50,000 records to /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/transactions/transactions_00040.parquet
+2026-07-14 14:05:34,732 | INFO | TransactionGenerator | Generated 2,000,000 transactions...
+2026-07-14 14:05:35,386 | INFO | TransactionGenerator | Writing 50,000 records to /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/transactions/transactions_00041.parquet
+2026-07-14 14:05:36,223 | INFO | TransactionGenerator | Writing 50,000 records to /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/transactions/transactions_00042.parquet
+2026-07-14 14:05:36,446 | INFO | TransactionGenerator | Generated 2,100,000 transactions...
+2026-07-14 14:05:37,074 | INFO | TransactionGenerator | Writing 50,000 records to /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/transactions/transactions_00043.parquet
+2026-07-14 14:05:37,909 | INFO | TransactionGenerator | Writing 50,000 records to /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/transactions/transactions_00044.parquet
+2026-07-14 14:05:38,129 | INFO | TransactionGenerator | Generated 2,200,000 transactions...
+2026-07-14 14:05:38,741 | INFO | TransactionGenerator | Writing 50,000 records to /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/transactions/transactions_00045.parquet
+2026-07-14 14:05:39,576 | INFO | TransactionGenerator | Writing 50,000 records to /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/transactions/transactions_00046.parquet
+2026-07-14 14:05:39,795 | INFO | TransactionGenerator | Generated 2,300,000 transactions...
+2026-07-14 14:05:40,410 | INFO | TransactionGenerator | Writing 50,000 records to /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/transactions/transactions_00047.parquet
+2026-07-14 14:05:41,237 | INFO | TransactionGenerator | Writing 50,000 records to /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/transactions/transactions_00048.parquet
+2026-07-14 14:05:41,508 | INFO | TransactionGenerator | Generated 2,400,000 transactions...
+2026-07-14 14:05:42,119 | INFO | TransactionGenerator | Writing 50,000 records to /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/transactions/transactions_00049.parquet
+2026-07-14 14:05:42,944 | INFO | TransactionGenerator | Writing 50,000 records to /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/transactions/transactions_00050.parquet
+2026-07-14 14:05:43,163 | INFO | TransactionGenerator | Generated 2,500,000 transactions...
+2026-07-14 14:05:43,762 | INFO | TransactionGenerator | Writing 50,000 records to /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/transactions/transactions_00051.parquet
+2026-07-14 14:05:44,592 | INFO | TransactionGenerator | Writing 50,000 records to /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/transactions/transactions_00052.parquet
+2026-07-14 14:05:44,808 | INFO | TransactionGenerator | Generated 2,600,000 transactions...
+2026-07-14 14:05:45,406 | INFO | TransactionGenerator | Writing 50,000 records to /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/transactions/transactions_00053.parquet
+2026-07-14 14:05:46,225 | INFO | TransactionGenerator | Writing 50,000 records to /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/transactions/transactions_00054.parquet
+2026-07-14 14:05:46,450 | INFO | TransactionGenerator | Generated 2,700,000 transactions...
+2026-07-14 14:05:47,052 | INFO | TransactionGenerator | Writing 50,000 records to /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/transactions/transactions_00055.parquet
+2026-07-14 14:05:47,879 | INFO | TransactionGenerator | Writing 50,000 records to /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/transactions/transactions_00056.parquet
+2026-07-14 14:05:48,099 | INFO | TransactionGenerator | Generated 2,800,000 transactions...
+2026-07-14 14:05:48,716 | INFO | TransactionGenerator | Writing 50,000 records to /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/transactions/transactions_00057.parquet
+2026-07-14 14:05:49,532 | INFO | TransactionGenerator | Writing 50,000 records to /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/transactions/transactions_00058.parquet
+2026-07-14 14:05:49,762 | INFO | TransactionGenerator | Generated 2,900,000 transactions...
+2026-07-14 14:05:50,386 | INFO | TransactionGenerator | Writing 50,000 records to /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/transactions/transactions_00059.parquet
+2026-07-14 14:05:51,218 | INFO | TransactionGenerator | Writing 50,000 records to /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/transactions/transactions_00060.parquet
+2026-07-14 14:05:51,438 | INFO | TransactionGenerator | Generated 3,000,000 transactions...
+2026-07-14 14:05:52,050 | INFO | TransactionGenerator | Writing 50,000 records to /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/transactions/transactions_00061.parquet
+2026-07-14 14:05:52,894 | INFO | TransactionGenerator | Writing 50,000 records to /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/transactions/transactions_00062.parquet
+2026-07-14 14:05:53,122 | INFO | TransactionGenerator | Generated 3,100,000 transactions...
+2026-07-14 14:05:53,352 | INFO | TransactionGenerator | Accounts processed : 178,364
+2026-07-14 14:05:53,352 | INFO | TransactionGenerator | Transactions generated : 3,118,465
+2026-07-14 14:05:53,352 | INFO | TransactionGenerator | Transaction generation completed.
+2026-07-14 14:05:53,352 | INFO | TransactionGenerator | Writing 18,465 records to /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/transactions/transactions_00063.parquet
+2026-07-14 14:05:53,439 | INFO | TransactionGenerator | Generator completed: transactions
+2026-07-14 14:05:53,439 | INFO | TransactionGenerator | Total records generated: 3118465
+2026-07-14 14:06:42,973 | INFO | generators.common.data_loader | Loading Parquet dataset: transactions
+2026-07-14 14:06:42,974 | INFO | generators.common.data_loader | Dataset directory: /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/transactions
+2026-07-14 14:06:42,974 | INFO | generators.common.data_loader | Parquet files found: 63
+2026-07-14 14:06:42,974 | INFO | generators.common.data_loader | Reading Parquet file: /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/transactions/transactions_00001.parquet
+2026-07-14 14:06:43,678 | INFO | generators.common.data_loader | Reading Parquet file: /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/transactions/transactions_00002.parquet
+2026-07-14 14:06:44,416 | INFO | generators.common.data_loader | Reading Parquet file: /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/transactions/transactions_00003.parquet
+2026-07-14 14:06:44,959 | INFO | generators.common.data_loader | Reading Parquet file: /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/transactions/transactions_00004.parquet
+2026-07-14 14:06:45,512 | INFO | generators.common.data_loader | Reading Parquet file: /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/transactions/transactions_00005.parquet
+2026-07-14 14:06:46,066 | INFO | generators.common.data_loader | Reading Parquet file: /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/transactions/transactions_00006.parquet
+2026-07-14 14:06:46,814 | INFO | generators.common.data_loader | Reading Parquet file: /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/transactions/transactions_00007.parquet
+2026-07-14 14:06:47,359 | INFO | generators.common.data_loader | Reading Parquet file: /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/transactions/transactions_00008.parquet
+2026-07-14 14:06:47,923 | INFO | generators.common.data_loader | Reading Parquet file: /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/transactions/transactions_00009.parquet
+2026-07-14 14:06:48,727 | INFO | generators.common.data_loader | Reading Parquet file: /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/transactions/transactions_00010.parquet
+2026-07-14 14:06:49,269 | INFO | generators.common.data_loader | Reading Parquet file: /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/transactions/transactions_00011.parquet
+2026-07-14 14:06:49,872 | INFO | generators.common.data_loader | Reading Parquet file: /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/transactions/transactions_00012.parquet
+2026-07-14 14:06:50,801 | INFO | generators.common.data_loader | Reading Parquet file: /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/transactions/transactions_00013.parquet
+2026-07-14 14:06:51,358 | INFO | generators.common.data_loader | Reading Parquet file: /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/transactions/transactions_00014.parquet
+2026-07-14 14:06:51,934 | INFO | generators.common.data_loader | Reading Parquet file: /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/transactions/transactions_00015.parquet
+2026-07-14 14:06:52,469 | INFO | generators.common.data_loader | Reading Parquet file: /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/transactions/transactions_00016.parquet
+2026-07-14 14:06:53,444 | INFO | generators.common.data_loader | Reading Parquet file: /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/transactions/transactions_00017.parquet
+2026-07-14 14:06:54,008 | INFO | generators.common.data_loader | Reading Parquet file: /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/transactions/transactions_00018.parquet
+2026-07-14 14:06:54,546 | INFO | generators.common.data_loader | Reading Parquet file: /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/transactions/transactions_00019.parquet
+2026-07-14 14:06:55,212 | INFO | generators.common.data_loader | Reading Parquet file: /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/transactions/transactions_00020.parquet
+2026-07-14 14:06:56,427 | INFO | generators.common.data_loader | Reading Parquet file: /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/transactions/transactions_00021.parquet
+2026-07-14 14:06:57,083 | INFO | generators.common.data_loader | Reading Parquet file: /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/transactions/transactions_00022.parquet
+2026-07-14 14:06:57,687 | INFO | generators.common.data_loader | Reading Parquet file: /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/transactions/transactions_00023.parquet
+2026-07-14 14:06:58,271 | INFO | generators.common.data_loader | Reading Parquet file: /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/transactions/transactions_00024.parquet
+2026-07-14 14:06:58,866 | INFO | generators.common.data_loader | Reading Parquet file: /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/transactions/transactions_00025.parquet
+2026-07-14 14:07:00,101 | INFO | generators.common.data_loader | Reading Parquet file: /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/transactions/transactions_00026.parquet
+2026-07-14 14:07:00,697 | INFO | generators.common.data_loader | Reading Parquet file: /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/transactions/transactions_00027.parquet
+2026-07-14 14:07:01,261 | INFO | generators.common.data_loader | Reading Parquet file: /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/transactions/transactions_00028.parquet
+2026-07-14 14:07:01,843 | INFO | generators.common.data_loader | Reading Parquet file: /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/transactions/transactions_00029.parquet
+2026-07-14 14:07:02,420 | INFO | generators.common.data_loader | Reading Parquet file: /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/transactions/transactions_00030.parquet
+2026-07-14 14:07:03,017 | INFO | generators.common.data_loader | Reading Parquet file: /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/transactions/transactions_00031.parquet
+2026-07-14 14:07:04,459 | INFO | generators.common.data_loader | Reading Parquet file: /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/transactions/transactions_00032.parquet
+2026-07-14 14:07:05,080 | INFO | generators.common.data_loader | Reading Parquet file: /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/transactions/transactions_00033.parquet
+2026-07-14 14:07:05,725 | INFO | generators.common.data_loader | Reading Parquet file: /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/transactions/transactions_00034.parquet
+2026-07-14 14:07:06,356 | INFO | generators.common.data_loader | Reading Parquet file: /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/transactions/transactions_00035.parquet
+2026-07-14 14:07:06,976 | INFO | generators.common.data_loader | Reading Parquet file: /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/transactions/transactions_00036.parquet
+2026-07-14 14:07:07,579 | INFO | generators.common.data_loader | Reading Parquet file: /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/transactions/transactions_00037.parquet
+2026-07-14 14:07:08,208 | INFO | generators.common.data_loader | Reading Parquet file: /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/transactions/transactions_00038.parquet
+2026-07-14 14:07:08,824 | INFO | generators.common.data_loader | Reading Parquet file: /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/transactions/transactions_00039.parquet
+2026-07-14 14:07:10,612 | INFO | generators.common.data_loader | Reading Parquet file: /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/transactions/transactions_00040.parquet
+2026-07-14 14:07:11,233 | INFO | generators.common.data_loader | Reading Parquet file: /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/transactions/transactions_00041.parquet
+2026-07-14 14:07:11,860 | INFO | generators.common.data_loader | Reading Parquet file: /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/transactions/transactions_00042.parquet
+2026-07-14 14:07:12,486 | INFO | generators.common.data_loader | Reading Parquet file: /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/transactions/transactions_00043.parquet
+2026-07-14 14:07:13,124 | INFO | generators.common.data_loader | Reading Parquet file: /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/transactions/transactions_00044.parquet
+2026-07-14 14:07:13,739 | INFO | generators.common.data_loader | Reading Parquet file: /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/transactions/transactions_00045.parquet
+2026-07-14 14:07:14,388 | INFO | generators.common.data_loader | Reading Parquet file: /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/transactions/transactions_00046.parquet
+2026-07-14 14:07:14,994 | INFO | generators.common.data_loader | Reading Parquet file: /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/transactions/transactions_00047.parquet
+2026-07-14 14:07:15,588 | INFO | generators.common.data_loader | Reading Parquet file: /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/transactions/transactions_00048.parquet
+2026-07-14 14:07:16,171 | INFO | generators.common.data_loader | Reading Parquet file: /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/transactions/transactions_00049.parquet
+2026-07-14 14:07:17,985 | INFO | generators.common.data_loader | Reading Parquet file: /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/transactions/transactions_00050.parquet
+2026-07-14 14:07:18,566 | INFO | generators.common.data_loader | Reading Parquet file: /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/transactions/transactions_00051.parquet
+2026-07-14 14:07:19,184 | INFO | generators.common.data_loader | Reading Parquet file: /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/transactions/transactions_00052.parquet
+2026-07-14 14:07:19,845 | INFO | generators.common.data_loader | Reading Parquet file: /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/transactions/transactions_00053.parquet
+2026-07-14 14:07:20,405 | INFO | generators.common.data_loader | Reading Parquet file: /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/transactions/transactions_00054.parquet
+2026-07-14 14:07:21,109 | INFO | generators.common.data_loader | Reading Parquet file: /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/transactions/transactions_00055.parquet
+2026-07-14 14:07:21,737 | INFO | generators.common.data_loader | Reading Parquet file: /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/transactions/transactions_00056.parquet
+2026-07-14 14:07:22,547 | INFO | generators.common.data_loader | Reading Parquet file: /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/transactions/transactions_00057.parquet
+2026-07-14 14:07:23,284 | INFO | generators.common.data_loader | Reading Parquet file: /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/transactions/transactions_00058.parquet
+2026-07-14 14:07:24,287 | INFO | generators.common.data_loader | Reading Parquet file: /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/transactions/transactions_00059.parquet
+2026-07-14 14:07:25,074 | INFO | generators.common.data_loader | Reading Parquet file: /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/transactions/transactions_00060.parquet
+2026-07-14 14:07:26,337 | INFO | generators.common.data_loader | Reading Parquet file: /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/transactions/transactions_00061.parquet
+2026-07-14 14:07:29,590 | INFO | generators.common.data_loader | Reading Parquet file: /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/transactions/transactions_00062.parquet
+2026-07-14 14:07:30,327 | INFO | generators.common.data_loader | Reading Parquet file: /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/transactions/transactions_00063.parquet
+2026-07-14 14:07:30,560 | INFO | generators.common.data_loader | Loaded 3118465 records from dataset: transactions
+2026-07-14 14:07:30,561 | INFO | FraudGenerator | Starting generator: fraud
+2026-07-14 14:07:30,561 | INFO | FraudGenerator | Starting fraud generation...
+2026-07-14 14:07:30,567 | ERROR | FraudGenerator | Generator failed: fraud
+Traceback (most recent call last):
+  File "/Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/generators/common/base_generator.py", line 224, in run
+    self.generate()
+    ~~~~~~~~~~~~~^^
+  File "/Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/generators/fraud_generator.py", line 322, in generate
+    fraud = self.build_fraud(
+        transaction
+    )
+  File "/Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/generators/fraud_generator.py", line 265, in build_fraud
+    transaction["channel"],
+    ~~~~~~~~~~~^^^^^^^^^^^
+KeyError: 'channel'
+2026-07-14 14:11:09,256 | INFO | generators.common.data_loader | Loading Parquet dataset: transactions
+2026-07-14 14:11:09,257 | INFO | generators.common.data_loader | Dataset directory: /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/transactions
+2026-07-14 14:11:09,258 | INFO | generators.common.data_loader | Parquet files found: 63
+2026-07-14 14:11:09,258 | INFO | generators.common.data_loader | Reading Parquet file: /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/transactions/transactions_00001.parquet
+2026-07-14 14:11:09,948 | INFO | generators.common.data_loader | Reading Parquet file: /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/transactions/transactions_00002.parquet
+2026-07-14 14:11:10,616 | INFO | generators.common.data_loader | Reading Parquet file: /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/transactions/transactions_00003.parquet
+2026-07-14 14:11:11,177 | INFO | generators.common.data_loader | Reading Parquet file: /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/transactions/transactions_00004.parquet
+2026-07-14 14:11:11,769 | INFO | generators.common.data_loader | Reading Parquet file: /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/transactions/transactions_00005.parquet
+2026-07-14 14:11:12,308 | INFO | generators.common.data_loader | Reading Parquet file: /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/transactions/transactions_00006.parquet
+2026-07-14 14:11:13,062 | INFO | generators.common.data_loader | Reading Parquet file: /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/transactions/transactions_00007.parquet
+2026-07-14 14:11:13,630 | INFO | generators.common.data_loader | Reading Parquet file: /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/transactions/transactions_00008.parquet
+2026-07-14 14:11:14,195 | INFO | generators.common.data_loader | Reading Parquet file: /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/transactions/transactions_00009.parquet
+2026-07-14 14:11:15,037 | INFO | generators.common.data_loader | Reading Parquet file: /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/transactions/transactions_00010.parquet
+2026-07-14 14:11:15,624 | INFO | generators.common.data_loader | Reading Parquet file: /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/transactions/transactions_00011.parquet
+2026-07-14 14:11:16,214 | INFO | generators.common.data_loader | Reading Parquet file: /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/transactions/transactions_00012.parquet
+2026-07-14 14:11:17,234 | INFO | generators.common.data_loader | Reading Parquet file: /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/transactions/transactions_00013.parquet
+2026-07-14 14:11:17,808 | INFO | generators.common.data_loader | Reading Parquet file: /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/transactions/transactions_00014.parquet
+2026-07-14 14:11:18,390 | INFO | generators.common.data_loader | Reading Parquet file: /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/transactions/transactions_00015.parquet
+2026-07-14 14:11:18,962 | INFO | generators.common.data_loader | Reading Parquet file: /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/transactions/transactions_00016.parquet
+2026-07-14 14:11:19,967 | INFO | generators.common.data_loader | Reading Parquet file: /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/transactions/transactions_00017.parquet
+2026-07-14 14:11:20,525 | INFO | generators.common.data_loader | Reading Parquet file: /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/transactions/transactions_00018.parquet
+2026-07-14 14:11:21,122 | INFO | generators.common.data_loader | Reading Parquet file: /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/transactions/transactions_00019.parquet
+2026-07-14 14:11:21,678 | INFO | generators.common.data_loader | Reading Parquet file: /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/transactions/transactions_00020.parquet
+2026-07-14 14:11:22,751 | INFO | generators.common.data_loader | Reading Parquet file: /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/transactions/transactions_00021.parquet
+2026-07-14 14:11:23,296 | INFO | generators.common.data_loader | Reading Parquet file: /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/transactions/transactions_00022.parquet
+2026-07-14 14:11:23,874 | INFO | generators.common.data_loader | Reading Parquet file: /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/transactions/transactions_00023.parquet
+2026-07-14 14:11:24,465 | INFO | generators.common.data_loader | Reading Parquet file: /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/transactions/transactions_00024.parquet
+2026-07-14 14:11:25,137 | INFO | generators.common.data_loader | Reading Parquet file: /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/transactions/transactions_00025.parquet
+2026-07-14 14:11:26,344 | INFO | generators.common.data_loader | Reading Parquet file: /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/transactions/transactions_00026.parquet
+2026-07-14 14:11:26,939 | INFO | generators.common.data_loader | Reading Parquet file: /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/transactions/transactions_00027.parquet
+2026-07-14 14:11:27,493 | INFO | generators.common.data_loader | Reading Parquet file: /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/transactions/transactions_00028.parquet
+2026-07-14 14:11:28,096 | INFO | generators.common.data_loader | Reading Parquet file: /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/transactions/transactions_00029.parquet
+2026-07-14 14:11:28,738 | INFO | generators.common.data_loader | Reading Parquet file: /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/transactions/transactions_00030.parquet
+2026-07-14 14:11:29,394 | INFO | generators.common.data_loader | Reading Parquet file: /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/transactions/transactions_00031.parquet
+2026-07-14 14:11:31,418 | INFO | generators.common.data_loader | Reading Parquet file: /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/transactions/transactions_00032.parquet
+2026-07-14 14:11:32,128 | INFO | generators.common.data_loader | Reading Parquet file: /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/transactions/transactions_00033.parquet
+2026-07-14 14:11:33,020 | INFO | generators.common.data_loader | Reading Parquet file: /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/transactions/transactions_00034.parquet
+2026-07-14 14:11:33,820 | INFO | generators.common.data_loader | Reading Parquet file: /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/transactions/transactions_00035.parquet
+2026-07-14 14:11:34,604 | INFO | generators.common.data_loader | Reading Parquet file: /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/transactions/transactions_00036.parquet
+2026-07-14 14:11:35,397 | INFO | generators.common.data_loader | Reading Parquet file: /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/transactions/transactions_00037.parquet
+2026-07-14 14:11:36,169 | INFO | generators.common.data_loader | Reading Parquet file: /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/transactions/transactions_00038.parquet
+2026-07-14 14:11:37,192 | INFO | generators.common.data_loader | Reading Parquet file: /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/transactions/transactions_00039.parquet
+2026-07-14 14:11:39,141 | INFO | generators.common.data_loader | Reading Parquet file: /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/transactions/transactions_00040.parquet
+2026-07-14 14:11:39,883 | INFO | generators.common.data_loader | Reading Parquet file: /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/transactions/transactions_00041.parquet
+2026-07-14 14:11:40,637 | INFO | generators.common.data_loader | Reading Parquet file: /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/transactions/transactions_00042.parquet
+2026-07-14 14:11:41,395 | INFO | generators.common.data_loader | Reading Parquet file: /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/transactions/transactions_00043.parquet
+2026-07-14 14:11:42,135 | INFO | generators.common.data_loader | Reading Parquet file: /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/transactions/transactions_00044.parquet
+2026-07-14 14:11:42,960 | INFO | generators.common.data_loader | Reading Parquet file: /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/transactions/transactions_00045.parquet
+2026-07-14 14:11:43,683 | INFO | generators.common.data_loader | Reading Parquet file: /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/transactions/transactions_00046.parquet
+2026-07-14 14:11:44,449 | INFO | generators.common.data_loader | Reading Parquet file: /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/transactions/transactions_00047.parquet
+2026-07-14 14:11:45,187 | INFO | generators.common.data_loader | Reading Parquet file: /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/transactions/transactions_00048.parquet
+2026-07-14 14:11:45,946 | INFO | generators.common.data_loader | Reading Parquet file: /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/transactions/transactions_00049.parquet
+2026-07-14 14:11:48,213 | INFO | generators.common.data_loader | Reading Parquet file: /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/transactions/transactions_00050.parquet
+2026-07-14 14:11:48,971 | INFO | generators.common.data_loader | Reading Parquet file: /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/transactions/transactions_00051.parquet
+2026-07-14 14:11:49,741 | INFO | generators.common.data_loader | Reading Parquet file: /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/transactions/transactions_00052.parquet
+2026-07-14 14:11:50,501 | INFO | generators.common.data_loader | Reading Parquet file: /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/transactions/transactions_00053.parquet
+2026-07-14 14:11:51,316 | INFO | generators.common.data_loader | Reading Parquet file: /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/transactions/transactions_00054.parquet
+2026-07-14 14:11:52,050 | INFO | generators.common.data_loader | Reading Parquet file: /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/transactions/transactions_00055.parquet
+2026-07-14 14:11:52,790 | INFO | generators.common.data_loader | Reading Parquet file: /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/transactions/transactions_00056.parquet
+2026-07-14 14:11:53,434 | INFO | generators.common.data_loader | Reading Parquet file: /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/transactions/transactions_00057.parquet
+2026-07-14 14:11:54,236 | INFO | generators.common.data_loader | Reading Parquet file: /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/transactions/transactions_00058.parquet
+2026-07-14 14:11:55,234 | INFO | generators.common.data_loader | Reading Parquet file: /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/transactions/transactions_00059.parquet
+2026-07-14 14:11:56,014 | INFO | generators.common.data_loader | Reading Parquet file: /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/transactions/transactions_00060.parquet
+2026-07-14 14:11:56,826 | INFO | generators.common.data_loader | Reading Parquet file: /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/transactions/transactions_00061.parquet
+2026-07-14 14:11:59,515 | INFO | generators.common.data_loader | Reading Parquet file: /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/transactions/transactions_00062.parquet
+2026-07-14 14:12:00,468 | INFO | generators.common.data_loader | Reading Parquet file: /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/transactions/transactions_00063.parquet
+2026-07-14 14:12:00,764 | INFO | generators.common.data_loader | Loaded 3118465 records from dataset: transactions
+2026-07-14 14:12:00,766 | INFO | FraudGenerator | Starting generator: fraud
+2026-07-14 14:12:00,766 | INFO | FraudGenerator | Starting fraud generation...
+2026-07-14 14:12:01,406 | INFO | FraudGenerator | Generated 10,000 fraud cases...
+2026-07-14 14:12:02,054 | INFO | FraudGenerator | Generated 20,000 fraud cases...
+2026-07-14 14:12:02,731 | INFO | FraudGenerator | Generated 30,000 fraud cases...
+2026-07-14 14:12:03,154 | INFO | FraudGenerator | Transactions processed : 3,118,465
+2026-07-14 14:12:03,154 | INFO | FraudGenerator | Fraud cases generated : 36,119
+2026-07-14 14:12:03,154 | INFO | FraudGenerator | Actual fraud rate : 1.1582%
+2026-07-14 14:12:03,154 | INFO | FraudGenerator | Fraud generation completed.
+2026-07-14 14:12:03,155 | INFO | FraudGenerator | Writing 36,119 records to /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/fraud/fraud_00001.parquet
+2026-07-14 14:12:03,526 | INFO | FraudGenerator | Generator completed: fraud
+2026-07-14 14:12:03,526 | INFO | FraudGenerator | Total records generated: 36119
+2026-07-14 20:07:41,615 | INFO | botocore.credentials | Found credentials in shared credentials file: ~/.aws/credentials
+2026-07-14 20:07:41,802 | INFO | S3RawUploader | Starting S3 raw-zone upload
+2026-07-14 20:07:41,802 | INFO | S3RawUploader | Processing dataset: branches
+2026-07-14 20:07:42,071 | INFO | S3RawUploader | Uploading: /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/branches/branches_00001.parquet -> s3://enterprise-banking-etl-raw/raw/branches/branches_00001.parquet
+2026-07-14 20:07:42,262 | INFO | S3RawUploader | Dataset completed: branches | uploaded=1 | skipped=0
+2026-07-14 20:07:42,262 | INFO | S3RawUploader | Processing dataset: employees
+2026-07-14 20:07:42,313 | INFO | S3RawUploader | Uploading: /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/employees/employees_00001.parquet -> s3://enterprise-banking-etl-raw/raw/employees/employees_00001.parquet
+2026-07-14 20:07:42,599 | INFO | S3RawUploader | Dataset completed: employees | uploaded=1 | skipped=0
+2026-07-14 20:07:42,599 | INFO | S3RawUploader | Processing dataset: customers
+2026-07-14 20:07:42,661 | INFO | S3RawUploader | Uploading: /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/customers/customers_00001.parquet -> s3://enterprise-banking-etl-raw/raw/customers/customers_00001.parquet
+2026-07-14 20:07:43,009 | INFO | S3RawUploader | Uploading: /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/customers/customers_00002.parquet -> s3://enterprise-banking-etl-raw/raw/customers/customers_00002.parquet
+2026-07-14 20:07:43,305 | INFO | S3RawUploader | Dataset completed: customers | uploaded=2 | skipped=0
+2026-07-14 20:07:43,306 | INFO | S3RawUploader | Processing dataset: accounts
+2026-07-14 20:07:43,359 | INFO | S3RawUploader | Uploading: /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/accounts/accounts_00001.parquet -> s3://enterprise-banking-etl-raw/raw/accounts/accounts_00001.parquet
+2026-07-14 20:07:43,666 | INFO | S3RawUploader | Uploading: /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/accounts/accounts_00002.parquet -> s3://enterprise-banking-etl-raw/raw/accounts/accounts_00002.parquet
+2026-07-14 20:07:43,906 | INFO | S3RawUploader | Uploading: /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/accounts/accounts_00003.parquet -> s3://enterprise-banking-etl-raw/raw/accounts/accounts_00003.parquet
+2026-07-14 20:07:44,176 | INFO | S3RawUploader | Uploading: /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/accounts/accounts_00004.parquet -> s3://enterprise-banking-etl-raw/raw/accounts/accounts_00004.parquet
+2026-07-14 20:07:44,363 | INFO | S3RawUploader | Dataset completed: accounts | uploaded=4 | skipped=0
+2026-07-14 20:07:44,363 | INFO | S3RawUploader | Processing dataset: loans
+2026-07-14 20:07:44,418 | INFO | S3RawUploader | Uploading: /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/loans/loans_00001.parquet -> s3://enterprise-banking-etl-raw/raw/loans/loans_00001.parquet
+2026-07-14 20:07:44,666 | INFO | S3RawUploader | Dataset completed: loans | uploaded=1 | skipped=0
+2026-07-14 20:07:44,666 | INFO | S3RawUploader | Processing dataset: credit_cards
+2026-07-14 20:07:44,729 | INFO | S3RawUploader | Uploading: /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/credit_cards/credit_cards_00001.parquet -> s3://enterprise-banking-etl-raw/raw/credit_cards/credit_cards_00001.parquet
+2026-07-14 20:07:44,944 | INFO | S3RawUploader | Dataset completed: credit_cards | uploaded=1 | skipped=0
+2026-07-14 20:07:44,944 | INFO | S3RawUploader | Processing dataset: transactions
+2026-07-14 20:07:45,015 | INFO | S3RawUploader | Uploading: /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/transactions/transactions_00001.parquet -> s3://enterprise-banking-etl-raw/raw/transactions/transactions_00001.parquet
+2026-07-14 20:07:45,325 | INFO | S3RawUploader | Uploading: /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/transactions/transactions_00002.parquet -> s3://enterprise-banking-etl-raw/raw/transactions/transactions_00002.parquet
+2026-07-14 20:07:45,586 | INFO | S3RawUploader | Uploading: /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/transactions/transactions_00003.parquet -> s3://enterprise-banking-etl-raw/raw/transactions/transactions_00003.parquet
+2026-07-14 20:07:45,845 | INFO | S3RawUploader | Uploading: /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/transactions/transactions_00004.parquet -> s3://enterprise-banking-etl-raw/raw/transactions/transactions_00004.parquet
+2026-07-14 20:07:46,049 | INFO | S3RawUploader | Uploading: /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/transactions/transactions_00005.parquet -> s3://enterprise-banking-etl-raw/raw/transactions/transactions_00005.parquet
+2026-07-14 20:07:46,251 | INFO | S3RawUploader | Uploading: /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/transactions/transactions_00006.parquet -> s3://enterprise-banking-etl-raw/raw/transactions/transactions_00006.parquet
+2026-07-14 20:07:46,491 | INFO | S3RawUploader | Uploading: /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/transactions/transactions_00007.parquet -> s3://enterprise-banking-etl-raw/raw/transactions/transactions_00007.parquet
+2026-07-14 20:07:46,823 | INFO | S3RawUploader | Uploading: /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/transactions/transactions_00008.parquet -> s3://enterprise-banking-etl-raw/raw/transactions/transactions_00008.parquet
+2026-07-14 20:07:47,091 | INFO | S3RawUploader | Uploading: /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/transactions/transactions_00009.parquet -> s3://enterprise-banking-etl-raw/raw/transactions/transactions_00009.parquet
+2026-07-14 20:07:47,351 | INFO | S3RawUploader | Uploading: /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/transactions/transactions_00010.parquet -> s3://enterprise-banking-etl-raw/raw/transactions/transactions_00010.parquet
+2026-07-14 20:07:47,650 | INFO | S3RawUploader | Uploading: /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/transactions/transactions_00011.parquet -> s3://enterprise-banking-etl-raw/raw/transactions/transactions_00011.parquet
+2026-07-14 20:07:47,942 | INFO | S3RawUploader | Uploading: /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/transactions/transactions_00012.parquet -> s3://enterprise-banking-etl-raw/raw/transactions/transactions_00012.parquet
+2026-07-14 20:07:48,223 | INFO | S3RawUploader | Uploading: /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/transactions/transactions_00013.parquet -> s3://enterprise-banking-etl-raw/raw/transactions/transactions_00013.parquet
+2026-07-14 20:07:48,480 | INFO | S3RawUploader | Uploading: /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/transactions/transactions_00014.parquet -> s3://enterprise-banking-etl-raw/raw/transactions/transactions_00014.parquet
+2026-07-14 20:07:48,767 | INFO | S3RawUploader | Uploading: /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/transactions/transactions_00015.parquet -> s3://enterprise-banking-etl-raw/raw/transactions/transactions_00015.parquet
+2026-07-14 20:07:49,019 | INFO | S3RawUploader | Uploading: /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/transactions/transactions_00016.parquet -> s3://enterprise-banking-etl-raw/raw/transactions/transactions_00016.parquet
+2026-07-14 20:07:49,238 | INFO | S3RawUploader | Uploading: /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/transactions/transactions_00017.parquet -> s3://enterprise-banking-etl-raw/raw/transactions/transactions_00017.parquet
+2026-07-14 20:07:49,490 | INFO | S3RawUploader | Uploading: /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/transactions/transactions_00018.parquet -> s3://enterprise-banking-etl-raw/raw/transactions/transactions_00018.parquet
+2026-07-14 20:07:49,752 | INFO | S3RawUploader | Uploading: /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/transactions/transactions_00019.parquet -> s3://enterprise-banking-etl-raw/raw/transactions/transactions_00019.parquet
+2026-07-14 20:07:49,978 | INFO | S3RawUploader | Uploading: /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/transactions/transactions_00020.parquet -> s3://enterprise-banking-etl-raw/raw/transactions/transactions_00020.parquet
+2026-07-14 20:07:50,220 | INFO | S3RawUploader | Uploading: /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/transactions/transactions_00021.parquet -> s3://enterprise-banking-etl-raw/raw/transactions/transactions_00021.parquet
+2026-07-14 20:07:50,441 | INFO | S3RawUploader | Uploading: /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/transactions/transactions_00022.parquet -> s3://enterprise-banking-etl-raw/raw/transactions/transactions_00022.parquet
+2026-07-14 20:07:50,685 | INFO | S3RawUploader | Uploading: /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/transactions/transactions_00023.parquet -> s3://enterprise-banking-etl-raw/raw/transactions/transactions_00023.parquet
+2026-07-14 20:07:50,933 | INFO | S3RawUploader | Uploading: /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/transactions/transactions_00024.parquet -> s3://enterprise-banking-etl-raw/raw/transactions/transactions_00024.parquet
+2026-07-14 20:07:51,177 | INFO | S3RawUploader | Uploading: /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/transactions/transactions_00025.parquet -> s3://enterprise-banking-etl-raw/raw/transactions/transactions_00025.parquet
+2026-07-14 20:07:51,410 | INFO | S3RawUploader | Uploading: /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/transactions/transactions_00026.parquet -> s3://enterprise-banking-etl-raw/raw/transactions/transactions_00026.parquet
+2026-07-14 20:07:51,662 | INFO | S3RawUploader | Uploading: /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/transactions/transactions_00027.parquet -> s3://enterprise-banking-etl-raw/raw/transactions/transactions_00027.parquet
+2026-07-14 20:07:51,946 | INFO | S3RawUploader | Uploading: /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/transactions/transactions_00028.parquet -> s3://enterprise-banking-etl-raw/raw/transactions/transactions_00028.parquet
+2026-07-14 20:07:52,211 | INFO | S3RawUploader | Uploading: /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/transactions/transactions_00029.parquet -> s3://enterprise-banking-etl-raw/raw/transactions/transactions_00029.parquet
+2026-07-14 20:07:52,481 | INFO | S3RawUploader | Uploading: /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/transactions/transactions_00030.parquet -> s3://enterprise-banking-etl-raw/raw/transactions/transactions_00030.parquet
+2026-07-14 20:07:52,753 | INFO | S3RawUploader | Uploading: /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/transactions/transactions_00031.parquet -> s3://enterprise-banking-etl-raw/raw/transactions/transactions_00031.parquet
+2026-07-14 20:07:53,043 | INFO | S3RawUploader | Uploading: /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/transactions/transactions_00032.parquet -> s3://enterprise-banking-etl-raw/raw/transactions/transactions_00032.parquet
+2026-07-14 20:07:53,251 | INFO | S3RawUploader | Uploading: /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/transactions/transactions_00033.parquet -> s3://enterprise-banking-etl-raw/raw/transactions/transactions_00033.parquet
+2026-07-14 20:07:53,532 | INFO | S3RawUploader | Uploading: /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/transactions/transactions_00034.parquet -> s3://enterprise-banking-etl-raw/raw/transactions/transactions_00034.parquet
+2026-07-14 20:07:53,794 | INFO | S3RawUploader | Uploading: /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/transactions/transactions_00035.parquet -> s3://enterprise-banking-etl-raw/raw/transactions/transactions_00035.parquet
+2026-07-14 20:07:54,148 | INFO | S3RawUploader | Uploading: /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/transactions/transactions_00036.parquet -> s3://enterprise-banking-etl-raw/raw/transactions/transactions_00036.parquet
+2026-07-14 20:07:54,413 | INFO | S3RawUploader | Uploading: /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/transactions/transactions_00037.parquet -> s3://enterprise-banking-etl-raw/raw/transactions/transactions_00037.parquet
+2026-07-14 20:07:54,711 | INFO | S3RawUploader | Uploading: /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/transactions/transactions_00038.parquet -> s3://enterprise-banking-etl-raw/raw/transactions/transactions_00038.parquet
+2026-07-14 20:07:55,024 | INFO | S3RawUploader | Uploading: /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/transactions/transactions_00039.parquet -> s3://enterprise-banking-etl-raw/raw/transactions/transactions_00039.parquet
+2026-07-14 20:07:55,222 | INFO | S3RawUploader | Uploading: /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/transactions/transactions_00040.parquet -> s3://enterprise-banking-etl-raw/raw/transactions/transactions_00040.parquet
+2026-07-14 20:07:55,652 | INFO | S3RawUploader | Uploading: /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/transactions/transactions_00041.parquet -> s3://enterprise-banking-etl-raw/raw/transactions/transactions_00041.parquet
+2026-07-14 20:07:56,240 | INFO | S3RawUploader | Uploading: /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/transactions/transactions_00042.parquet -> s3://enterprise-banking-etl-raw/raw/transactions/transactions_00042.parquet
+2026-07-14 20:07:56,494 | INFO | S3RawUploader | Uploading: /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/transactions/transactions_00043.parquet -> s3://enterprise-banking-etl-raw/raw/transactions/transactions_00043.parquet
+2026-07-14 20:07:56,791 | INFO | S3RawUploader | Uploading: /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/transactions/transactions_00044.parquet -> s3://enterprise-banking-etl-raw/raw/transactions/transactions_00044.parquet
+2026-07-14 20:07:57,106 | INFO | S3RawUploader | Uploading: /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/transactions/transactions_00045.parquet -> s3://enterprise-banking-etl-raw/raw/transactions/transactions_00045.parquet
+2026-07-14 20:07:57,386 | INFO | S3RawUploader | Uploading: /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/transactions/transactions_00046.parquet -> s3://enterprise-banking-etl-raw/raw/transactions/transactions_00046.parquet
+2026-07-14 20:07:57,614 | INFO | S3RawUploader | Uploading: /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/transactions/transactions_00047.parquet -> s3://enterprise-banking-etl-raw/raw/transactions/transactions_00047.parquet
+2026-07-14 20:07:57,934 | INFO | S3RawUploader | Uploading: /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/transactions/transactions_00048.parquet -> s3://enterprise-banking-etl-raw/raw/transactions/transactions_00048.parquet
+2026-07-14 20:07:58,222 | INFO | S3RawUploader | Uploading: /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/transactions/transactions_00049.parquet -> s3://enterprise-banking-etl-raw/raw/transactions/transactions_00049.parquet
+2026-07-14 20:07:58,483 | INFO | S3RawUploader | Uploading: /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/transactions/transactions_00050.parquet -> s3://enterprise-banking-etl-raw/raw/transactions/transactions_00050.parquet
+2026-07-14 20:07:58,725 | INFO | S3RawUploader | Uploading: /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/transactions/transactions_00051.parquet -> s3://enterprise-banking-etl-raw/raw/transactions/transactions_00051.parquet
+2026-07-14 20:07:58,952 | INFO | S3RawUploader | Uploading: /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/transactions/transactions_00052.parquet -> s3://enterprise-banking-etl-raw/raw/transactions/transactions_00052.parquet
+2026-07-14 20:07:59,215 | INFO | S3RawUploader | Uploading: /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/transactions/transactions_00053.parquet -> s3://enterprise-banking-etl-raw/raw/transactions/transactions_00053.parquet
+2026-07-14 20:07:59,456 | INFO | S3RawUploader | Uploading: /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/transactions/transactions_00054.parquet -> s3://enterprise-banking-etl-raw/raw/transactions/transactions_00054.parquet
+2026-07-14 20:07:59,787 | INFO | S3RawUploader | Uploading: /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/transactions/transactions_00055.parquet -> s3://enterprise-banking-etl-raw/raw/transactions/transactions_00055.parquet
+2026-07-14 20:08:00,047 | INFO | S3RawUploader | Uploading: /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/transactions/transactions_00056.parquet -> s3://enterprise-banking-etl-raw/raw/transactions/transactions_00056.parquet
+2026-07-14 20:08:00,315 | INFO | S3RawUploader | Uploading: /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/transactions/transactions_00057.parquet -> s3://enterprise-banking-etl-raw/raw/transactions/transactions_00057.parquet
+2026-07-14 20:08:00,593 | INFO | S3RawUploader | Uploading: /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/transactions/transactions_00058.parquet -> s3://enterprise-banking-etl-raw/raw/transactions/transactions_00058.parquet
+2026-07-14 20:08:00,847 | INFO | S3RawUploader | Uploading: /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/transactions/transactions_00059.parquet -> s3://enterprise-banking-etl-raw/raw/transactions/transactions_00059.parquet
+2026-07-14 20:08:01,092 | INFO | S3RawUploader | Uploading: /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/transactions/transactions_00060.parquet -> s3://enterprise-banking-etl-raw/raw/transactions/transactions_00060.parquet
+2026-07-14 20:08:01,418 | INFO | S3RawUploader | Uploading: /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/transactions/transactions_00061.parquet -> s3://enterprise-banking-etl-raw/raw/transactions/transactions_00061.parquet
+2026-07-14 20:08:01,690 | INFO | S3RawUploader | Uploading: /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/transactions/transactions_00062.parquet -> s3://enterprise-banking-etl-raw/raw/transactions/transactions_00062.parquet
+2026-07-14 20:08:01,919 | INFO | S3RawUploader | Uploading: /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/transactions/transactions_00063.parquet -> s3://enterprise-banking-etl-raw/raw/transactions/transactions_00063.parquet
+2026-07-14 20:08:02,104 | INFO | S3RawUploader | Dataset completed: transactions | uploaded=63 | skipped=0
+2026-07-14 20:08:02,104 | INFO | S3RawUploader | Processing dataset: fraud
+2026-07-14 20:08:02,164 | INFO | S3RawUploader | Uploading: /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/fraud/fraud_00001.parquet -> s3://enterprise-banking-etl-raw/raw/fraud/fraud_00001.parquet
+2026-07-14 20:08:02,428 | INFO | S3RawUploader | Dataset completed: fraud | uploaded=1 | skipped=0
+2026-07-14 20:08:02,428 | INFO | S3RawUploader | S3 upload completed | uploaded=74 | skipped=0
+2026-07-14 20:09:07,379 | INFO | botocore.credentials | Found credentials in shared credentials file: ~/.aws/credentials
+2026-07-14 20:09:07,550 | INFO | S3RawUploader | Starting S3 raw-zone upload
+2026-07-14 20:09:07,550 | INFO | S3RawUploader | Processing dataset: branches
+2026-07-14 20:09:07,810 | INFO | S3RawUploader | Skipping unchanged object: s3://enterprise-banking-etl-raw/raw/branches/branches_00001.parquet
+2026-07-14 20:09:07,822 | INFO | S3RawUploader | Dataset completed: branches | uploaded=0 | skipped=1
+2026-07-14 20:09:07,822 | INFO | S3RawUploader | Processing dataset: employees
+2026-07-14 20:09:07,876 | INFO | S3RawUploader | Skipping unchanged object: s3://enterprise-banking-etl-raw/raw/employees/employees_00001.parquet
+2026-07-14 20:09:07,876 | INFO | S3RawUploader | Dataset completed: employees | uploaded=0 | skipped=1
+2026-07-14 20:09:07,876 | INFO | S3RawUploader | Processing dataset: customers
+2026-07-14 20:09:07,940 | INFO | S3RawUploader | Skipping unchanged object: s3://enterprise-banking-etl-raw/raw/customers/customers_00001.parquet
+2026-07-14 20:09:08,004 | INFO | S3RawUploader | Skipping unchanged object: s3://enterprise-banking-etl-raw/raw/customers/customers_00002.parquet
+2026-07-14 20:09:08,004 | INFO | S3RawUploader | Dataset completed: customers | uploaded=0 | skipped=2
+2026-07-14 20:09:08,004 | INFO | S3RawUploader | Processing dataset: accounts
+2026-07-14 20:09:08,072 | INFO | S3RawUploader | Skipping unchanged object: s3://enterprise-banking-etl-raw/raw/accounts/accounts_00001.parquet
+2026-07-14 20:09:08,132 | INFO | S3RawUploader | Skipping unchanged object: s3://enterprise-banking-etl-raw/raw/accounts/accounts_00002.parquet
+2026-07-14 20:09:08,194 | INFO | S3RawUploader | Skipping unchanged object: s3://enterprise-banking-etl-raw/raw/accounts/accounts_00003.parquet
+2026-07-14 20:09:08,251 | INFO | S3RawUploader | Skipping unchanged object: s3://enterprise-banking-etl-raw/raw/accounts/accounts_00004.parquet
+2026-07-14 20:09:08,251 | INFO | S3RawUploader | Dataset completed: accounts | uploaded=0 | skipped=4
+2026-07-14 20:09:08,251 | INFO | S3RawUploader | Processing dataset: loans
+2026-07-14 20:09:08,310 | INFO | S3RawUploader | Skipping unchanged object: s3://enterprise-banking-etl-raw/raw/loans/loans_00001.parquet
+2026-07-14 20:09:08,310 | INFO | S3RawUploader | Dataset completed: loans | uploaded=0 | skipped=1
+2026-07-14 20:09:08,310 | INFO | S3RawUploader | Processing dataset: credit_cards
+2026-07-14 20:09:08,370 | INFO | S3RawUploader | Skipping unchanged object: s3://enterprise-banking-etl-raw/raw/credit_cards/credit_cards_00001.parquet
+2026-07-14 20:09:08,370 | INFO | S3RawUploader | Dataset completed: credit_cards | uploaded=0 | skipped=1
+2026-07-14 20:09:08,370 | INFO | S3RawUploader | Processing dataset: transactions
+2026-07-14 20:09:08,428 | INFO | S3RawUploader | Skipping unchanged object: s3://enterprise-banking-etl-raw/raw/transactions/transactions_00001.parquet
+2026-07-14 20:09:08,490 | INFO | S3RawUploader | Skipping unchanged object: s3://enterprise-banking-etl-raw/raw/transactions/transactions_00002.parquet
+2026-07-14 20:09:08,554 | INFO | S3RawUploader | Skipping unchanged object: s3://enterprise-banking-etl-raw/raw/transactions/transactions_00003.parquet
+2026-07-14 20:09:08,612 | INFO | S3RawUploader | Skipping unchanged object: s3://enterprise-banking-etl-raw/raw/transactions/transactions_00004.parquet
+2026-07-14 20:09:08,668 | INFO | S3RawUploader | Skipping unchanged object: s3://enterprise-banking-etl-raw/raw/transactions/transactions_00005.parquet
+2026-07-14 20:09:08,728 | INFO | S3RawUploader | Skipping unchanged object: s3://enterprise-banking-etl-raw/raw/transactions/transactions_00006.parquet
+2026-07-14 20:09:08,784 | INFO | S3RawUploader | Skipping unchanged object: s3://enterprise-banking-etl-raw/raw/transactions/transactions_00007.parquet
+2026-07-14 20:09:08,843 | INFO | S3RawUploader | Skipping unchanged object: s3://enterprise-banking-etl-raw/raw/transactions/transactions_00008.parquet
+2026-07-14 20:09:08,899 | INFO | S3RawUploader | Skipping unchanged object: s3://enterprise-banking-etl-raw/raw/transactions/transactions_00009.parquet
+2026-07-14 20:09:08,955 | INFO | S3RawUploader | Skipping unchanged object: s3://enterprise-banking-etl-raw/raw/transactions/transactions_00010.parquet
+2026-07-14 20:09:09,015 | INFO | S3RawUploader | Skipping unchanged object: s3://enterprise-banking-etl-raw/raw/transactions/transactions_00011.parquet
+2026-07-14 20:09:09,071 | INFO | S3RawUploader | Skipping unchanged object: s3://enterprise-banking-etl-raw/raw/transactions/transactions_00012.parquet
+2026-07-14 20:09:09,127 | INFO | S3RawUploader | Skipping unchanged object: s3://enterprise-banking-etl-raw/raw/transactions/transactions_00013.parquet
+2026-07-14 20:09:09,185 | INFO | S3RawUploader | Skipping unchanged object: s3://enterprise-banking-etl-raw/raw/transactions/transactions_00014.parquet
+2026-07-14 20:09:09,246 | INFO | S3RawUploader | Skipping unchanged object: s3://enterprise-banking-etl-raw/raw/transactions/transactions_00015.parquet
+2026-07-14 20:09:09,306 | INFO | S3RawUploader | Skipping unchanged object: s3://enterprise-banking-etl-raw/raw/transactions/transactions_00016.parquet
+2026-07-14 20:09:09,365 | INFO | S3RawUploader | Skipping unchanged object: s3://enterprise-banking-etl-raw/raw/transactions/transactions_00017.parquet
+2026-07-14 20:09:09,423 | INFO | S3RawUploader | Skipping unchanged object: s3://enterprise-banking-etl-raw/raw/transactions/transactions_00018.parquet
+2026-07-14 20:09:09,479 | INFO | S3RawUploader | Skipping unchanged object: s3://enterprise-banking-etl-raw/raw/transactions/transactions_00019.parquet
+2026-07-14 20:09:09,535 | INFO | S3RawUploader | Skipping unchanged object: s3://enterprise-banking-etl-raw/raw/transactions/transactions_00020.parquet
+2026-07-14 20:09:09,593 | INFO | S3RawUploader | Skipping unchanged object: s3://enterprise-banking-etl-raw/raw/transactions/transactions_00021.parquet
+2026-07-14 20:09:09,647 | INFO | S3RawUploader | Skipping unchanged object: s3://enterprise-banking-etl-raw/raw/transactions/transactions_00022.parquet
+2026-07-14 20:09:09,704 | INFO | S3RawUploader | Skipping unchanged object: s3://enterprise-banking-etl-raw/raw/transactions/transactions_00023.parquet
+2026-07-14 20:09:09,763 | INFO | S3RawUploader | Skipping unchanged object: s3://enterprise-banking-etl-raw/raw/transactions/transactions_00024.parquet
+2026-07-14 20:09:09,820 | INFO | S3RawUploader | Skipping unchanged object: s3://enterprise-banking-etl-raw/raw/transactions/transactions_00025.parquet
+2026-07-14 20:09:09,880 | INFO | S3RawUploader | Skipping unchanged object: s3://enterprise-banking-etl-raw/raw/transactions/transactions_00026.parquet
+2026-07-14 20:09:09,938 | INFO | S3RawUploader | Skipping unchanged object: s3://enterprise-banking-etl-raw/raw/transactions/transactions_00027.parquet
+2026-07-14 20:09:09,997 | INFO | S3RawUploader | Skipping unchanged object: s3://enterprise-banking-etl-raw/raw/transactions/transactions_00028.parquet
+2026-07-14 20:09:10,073 | INFO | S3RawUploader | Skipping unchanged object: s3://enterprise-banking-etl-raw/raw/transactions/transactions_00029.parquet
+2026-07-14 20:09:10,133 | INFO | S3RawUploader | Skipping unchanged object: s3://enterprise-banking-etl-raw/raw/transactions/transactions_00030.parquet
+2026-07-14 20:09:10,190 | INFO | S3RawUploader | Skipping unchanged object: s3://enterprise-banking-etl-raw/raw/transactions/transactions_00031.parquet
+2026-07-14 20:09:10,251 | INFO | S3RawUploader | Skipping unchanged object: s3://enterprise-banking-etl-raw/raw/transactions/transactions_00032.parquet
+2026-07-14 20:09:10,306 | INFO | S3RawUploader | Skipping unchanged object: s3://enterprise-banking-etl-raw/raw/transactions/transactions_00033.parquet
+2026-07-14 20:09:10,364 | INFO | S3RawUploader | Skipping unchanged object: s3://enterprise-banking-etl-raw/raw/transactions/transactions_00034.parquet
+2026-07-14 20:09:10,420 | INFO | S3RawUploader | Skipping unchanged object: s3://enterprise-banking-etl-raw/raw/transactions/transactions_00035.parquet
+2026-07-14 20:09:10,474 | INFO | S3RawUploader | Skipping unchanged object: s3://enterprise-banking-etl-raw/raw/transactions/transactions_00036.parquet
+2026-07-14 20:09:10,530 | INFO | S3RawUploader | Skipping unchanged object: s3://enterprise-banking-etl-raw/raw/transactions/transactions_00037.parquet
+2026-07-14 20:09:10,588 | INFO | S3RawUploader | Skipping unchanged object: s3://enterprise-banking-etl-raw/raw/transactions/transactions_00038.parquet
+2026-07-14 20:09:10,644 | INFO | S3RawUploader | Skipping unchanged object: s3://enterprise-banking-etl-raw/raw/transactions/transactions_00039.parquet
+2026-07-14 20:09:10,717 | INFO | S3RawUploader | Skipping unchanged object: s3://enterprise-banking-etl-raw/raw/transactions/transactions_00040.parquet
+2026-07-14 20:09:10,777 | INFO | S3RawUploader | Skipping unchanged object: s3://enterprise-banking-etl-raw/raw/transactions/transactions_00041.parquet
+2026-07-14 20:09:10,835 | INFO | S3RawUploader | Skipping unchanged object: s3://enterprise-banking-etl-raw/raw/transactions/transactions_00042.parquet
+2026-07-14 20:09:10,895 | INFO | S3RawUploader | Skipping unchanged object: s3://enterprise-banking-etl-raw/raw/transactions/transactions_00043.parquet
+2026-07-14 20:09:10,947 | INFO | S3RawUploader | Skipping unchanged object: s3://enterprise-banking-etl-raw/raw/transactions/transactions_00044.parquet
+2026-07-14 20:09:11,005 | INFO | S3RawUploader | Skipping unchanged object: s3://enterprise-banking-etl-raw/raw/transactions/transactions_00045.parquet
+2026-07-14 20:09:11,067 | INFO | S3RawUploader | Skipping unchanged object: s3://enterprise-banking-etl-raw/raw/transactions/transactions_00046.parquet
+2026-07-14 20:09:11,123 | INFO | S3RawUploader | Skipping unchanged object: s3://enterprise-banking-etl-raw/raw/transactions/transactions_00047.parquet
+2026-07-14 20:09:11,179 | INFO | S3RawUploader | Skipping unchanged object: s3://enterprise-banking-etl-raw/raw/transactions/transactions_00048.parquet
+2026-07-14 20:09:11,237 | INFO | S3RawUploader | Skipping unchanged object: s3://enterprise-banking-etl-raw/raw/transactions/transactions_00049.parquet
+2026-07-14 20:09:11,293 | INFO | S3RawUploader | Skipping unchanged object: s3://enterprise-banking-etl-raw/raw/transactions/transactions_00050.parquet
+2026-07-14 20:09:11,355 | INFO | S3RawUploader | Skipping unchanged object: s3://enterprise-banking-etl-raw/raw/transactions/transactions_00051.parquet
+2026-07-14 20:09:11,413 | INFO | S3RawUploader | Skipping unchanged object: s3://enterprise-banking-etl-raw/raw/transactions/transactions_00052.parquet
+2026-07-14 20:09:11,472 | INFO | S3RawUploader | Skipping unchanged object: s3://enterprise-banking-etl-raw/raw/transactions/transactions_00053.parquet
+2026-07-14 20:09:11,527 | INFO | S3RawUploader | Skipping unchanged object: s3://enterprise-banking-etl-raw/raw/transactions/transactions_00054.parquet
+2026-07-14 20:09:11,709 | INFO | S3RawUploader | Skipping unchanged object: s3://enterprise-banking-etl-raw/raw/transactions/transactions_00055.parquet
+2026-07-14 20:09:11,893 | INFO | S3RawUploader | Skipping unchanged object: s3://enterprise-banking-etl-raw/raw/transactions/transactions_00056.parquet
+2026-07-14 20:09:12,076 | INFO | S3RawUploader | Skipping unchanged object: s3://enterprise-banking-etl-raw/raw/transactions/transactions_00057.parquet
+2026-07-14 20:09:12,142 | INFO | S3RawUploader | Skipping unchanged object: s3://enterprise-banking-etl-raw/raw/transactions/transactions_00058.parquet
+2026-07-14 20:09:12,200 | INFO | S3RawUploader | Skipping unchanged object: s3://enterprise-banking-etl-raw/raw/transactions/transactions_00059.parquet
+2026-07-14 20:09:12,260 | INFO | S3RawUploader | Skipping unchanged object: s3://enterprise-banking-etl-raw/raw/transactions/transactions_00060.parquet
+2026-07-14 20:09:12,316 | INFO | S3RawUploader | Skipping unchanged object: s3://enterprise-banking-etl-raw/raw/transactions/transactions_00061.parquet
+2026-07-14 20:09:12,374 | INFO | S3RawUploader | Skipping unchanged object: s3://enterprise-banking-etl-raw/raw/transactions/transactions_00062.parquet
+2026-07-14 20:09:12,430 | INFO | S3RawUploader | Skipping unchanged object: s3://enterprise-banking-etl-raw/raw/transactions/transactions_00063.parquet
+2026-07-14 20:09:12,430 | INFO | S3RawUploader | Dataset completed: transactions | uploaded=0 | skipped=63
+2026-07-14 20:09:12,430 | INFO | S3RawUploader | Processing dataset: fraud
+2026-07-14 20:09:12,492 | INFO | S3RawUploader | Skipping unchanged object: s3://enterprise-banking-etl-raw/raw/fraud/fraud_00001.parquet
+2026-07-14 20:09:12,492 | INFO | S3RawUploader | Dataset completed: fraud | uploaded=0 | skipped=1
+2026-07-14 20:09:12,493 | INFO | S3RawUploader | S3 upload completed | uploaded=0 | skipped=74
+2026-07-15 09:14:01,066 | INFO | botocore.credentials | Found credentials in shared credentials file: ~/.aws/credentials
+2026-07-15 09:14:01,249 | INFO | S3DailyPartitionUploader | Starting daily S3 upload | execution_date=2026-07-15
+2026-07-15 09:14:01,249 | INFO | S3DailyPartitionUploader | Processing daily dataset: transactions
+2026-07-15 09:14:01,559 | INFO | S3DailyPartitionUploader | Uploading /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/transactions_daily/transaction_date=2026-07-15/transactions_20260715_00001.parquet -> s3://enterprise-banking-etl-raw/raw/transactions/transaction_date=2026-07-15/transactions_20260715_00001.parquet
+2026-07-15 09:14:02,101 | INFO | S3DailyPartitionUploader | Uploading /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/transactions_daily/transaction_date=2026-07-15/transactions_20260715_00002.parquet -> s3://enterprise-banking-etl-raw/raw/transactions/transaction_date=2026-07-15/transactions_20260715_00002.parquet
+2026-07-15 09:14:02,380 | INFO | S3DailyPartitionUploader | Uploading /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/transactions_daily/transaction_date=2026-07-15/transactions_20260715_00003.parquet -> s3://enterprise-banking-etl-raw/raw/transactions/transaction_date=2026-07-15/transactions_20260715_00003.parquet
+2026-07-15 09:14:02,664 | INFO | S3DailyPartitionUploader | Uploading /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/transactions_daily/transaction_date=2026-07-15/transactions_20260715_00004.parquet -> s3://enterprise-banking-etl-raw/raw/transactions/transaction_date=2026-07-15/transactions_20260715_00004.parquet
+2026-07-15 09:14:02,961 | INFO | S3DailyPartitionUploader | Uploading /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/transactions_daily/transaction_date=2026-07-15/transactions_20260715_00005.parquet -> s3://enterprise-banking-etl-raw/raw/transactions/transaction_date=2026-07-15/transactions_20260715_00005.parquet
+2026-07-15 09:14:03,224 | INFO | S3DailyPartitionUploader | Uploading /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/transactions_daily/transaction_date=2026-07-15/transactions_20260715_00006.parquet -> s3://enterprise-banking-etl-raw/raw/transactions/transaction_date=2026-07-15/transactions_20260715_00006.parquet
+2026-07-15 09:14:03,502 | INFO | S3DailyPartitionUploader | Uploading /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/transactions_daily/transaction_date=2026-07-15/transactions_20260715_00007.parquet -> s3://enterprise-banking-etl-raw/raw/transactions/transaction_date=2026-07-15/transactions_20260715_00007.parquet
+2026-07-15 09:14:03,777 | INFO | S3DailyPartitionUploader | Uploading /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/transactions_daily/transaction_date=2026-07-15/transactions_20260715_00008.parquet -> s3://enterprise-banking-etl-raw/raw/transactions/transaction_date=2026-07-15/transactions_20260715_00008.parquet
+2026-07-15 09:14:04,103 | INFO | S3DailyPartitionUploader | Uploading /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/transactions_daily/transaction_date=2026-07-15/transactions_20260715_00009.parquet -> s3://enterprise-banking-etl-raw/raw/transactions/transaction_date=2026-07-15/transactions_20260715_00009.parquet
+2026-07-15 09:14:04,378 | INFO | S3DailyPartitionUploader | Uploading /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/transactions_daily/transaction_date=2026-07-15/transactions_20260715_00010.parquet -> s3://enterprise-banking-etl-raw/raw/transactions/transaction_date=2026-07-15/transactions_20260715_00010.parquet
+2026-07-15 09:14:04,694 | INFO | S3DailyPartitionUploader | Uploading /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/transactions_daily/transaction_date=2026-07-15/transactions_20260715_00011.parquet -> s3://enterprise-banking-etl-raw/raw/transactions/transaction_date=2026-07-15/transactions_20260715_00011.parquet
+2026-07-15 09:14:04,961 | INFO | S3DailyPartitionUploader | Uploading /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/transactions_daily/transaction_date=2026-07-15/transactions_20260715_00012.parquet -> s3://enterprise-banking-etl-raw/raw/transactions/transaction_date=2026-07-15/transactions_20260715_00012.parquet
+2026-07-15 09:14:05,218 | INFO | S3DailyPartitionUploader | Uploading /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/transactions_daily/transaction_date=2026-07-15/transactions_20260715_00013.parquet -> s3://enterprise-banking-etl-raw/raw/transactions/transaction_date=2026-07-15/transactions_20260715_00013.parquet
+2026-07-15 09:14:05,463 | INFO | S3DailyPartitionUploader | Uploading /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/transactions_daily/transaction_date=2026-07-15/transactions_20260715_00014.parquet -> s3://enterprise-banking-etl-raw/raw/transactions/transaction_date=2026-07-15/transactions_20260715_00014.parquet
+2026-07-15 09:14:05,704 | INFO | S3DailyPartitionUploader | Uploading /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/transactions_daily/transaction_date=2026-07-15/transactions_20260715_00015.parquet -> s3://enterprise-banking-etl-raw/raw/transactions/transaction_date=2026-07-15/transactions_20260715_00015.parquet
+2026-07-15 09:14:05,941 | INFO | S3DailyPartitionUploader | Uploading /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/transactions_daily/transaction_date=2026-07-15/transactions_20260715_00016.parquet -> s3://enterprise-banking-etl-raw/raw/transactions/transaction_date=2026-07-15/transactions_20260715_00016.parquet
+2026-07-15 09:14:06,105 | INFO | S3DailyPartitionUploader | Dataset completed: transactions | uploaded=16 | skipped=0
+2026-07-15 09:14:06,106 | INFO | S3DailyPartitionUploader | Processing daily dataset: fraud
+2026-07-15 09:14:06,160 | INFO | S3DailyPartitionUploader | Uploading /Applications/XAMPP/xamppfiles/htdocs/projects/data-engineering/enterprise-banking-analytics-platform/data/raw/fraud_daily/detection_date=2026-07-15/fraud_20260715_00001.parquet -> s3://enterprise-banking-etl-raw/raw/fraud/detection_date=2026-07-15/fraud_20260715_00001.parquet
+2026-07-15 09:14:06,293 | INFO | S3DailyPartitionUploader | Dataset completed: fraud | uploaded=1 | skipped=0
+2026-07-15 09:14:06,293 | INFO | S3DailyPartitionUploader | Daily S3 upload completed | execution_date=2026-07-15 | uploaded=17 | skipped=0
+2026-07-15 09:16:35,130 | INFO | botocore.credentials | Found credentials in shared credentials file: ~/.aws/credentials
+2026-07-15 09:16:35,300 | INFO | S3DailyPartitionUploader | Starting daily S3 upload | execution_date=2026-07-15
+2026-07-15 09:16:35,300 | INFO | S3DailyPartitionUploader | Processing daily dataset: transactions
+2026-07-15 09:16:35,567 | INFO | S3DailyPartitionUploader | Skipping unchanged object: s3://enterprise-banking-etl-raw/raw/transactions/transaction_date=2026-07-15/transactions_20260715_00001.parquet
+2026-07-15 09:16:35,640 | INFO | S3DailyPartitionUploader | Skipping unchanged object: s3://enterprise-banking-etl-raw/raw/transactions/transaction_date=2026-07-15/transactions_20260715_00002.parquet
+2026-07-15 09:16:35,699 | INFO | S3DailyPartitionUploader | Skipping unchanged object: s3://enterprise-banking-etl-raw/raw/transactions/transaction_date=2026-07-15/transactions_20260715_00003.parquet
+2026-07-15 09:16:35,762 | INFO | S3DailyPartitionUploader | Skipping unchanged object: s3://enterprise-banking-etl-raw/raw/transactions/transaction_date=2026-07-15/transactions_20260715_00004.parquet
+2026-07-15 09:16:35,824 | INFO | S3DailyPartitionUploader | Skipping unchanged object: s3://enterprise-banking-etl-raw/raw/transactions/transaction_date=2026-07-15/transactions_20260715_00005.parquet
+2026-07-15 09:16:35,888 | INFO | S3DailyPartitionUploader | Skipping unchanged object: s3://enterprise-banking-etl-raw/raw/transactions/transaction_date=2026-07-15/transactions_20260715_00006.parquet
+2026-07-15 09:16:35,964 | INFO | S3DailyPartitionUploader | Skipping unchanged object: s3://enterprise-banking-etl-raw/raw/transactions/transaction_date=2026-07-15/transactions_20260715_00007.parquet
+2026-07-15 09:16:36,023 | INFO | S3DailyPartitionUploader | Skipping unchanged object: s3://enterprise-banking-etl-raw/raw/transactions/transaction_date=2026-07-15/transactions_20260715_00008.parquet
+2026-07-15 09:16:36,087 | INFO | S3DailyPartitionUploader | Skipping unchanged object: s3://enterprise-banking-etl-raw/raw/transactions/transaction_date=2026-07-15/transactions_20260715_00009.parquet
+2026-07-15 09:16:36,146 | INFO | S3DailyPartitionUploader | Skipping unchanged object: s3://enterprise-banking-etl-raw/raw/transactions/transaction_date=2026-07-15/transactions_20260715_00010.parquet
+2026-07-15 09:16:36,252 | INFO | S3DailyPartitionUploader | Skipping unchanged object: s3://enterprise-banking-etl-raw/raw/transactions/transaction_date=2026-07-15/transactions_20260715_00011.parquet
+2026-07-15 09:16:36,316 | INFO | S3DailyPartitionUploader | Skipping unchanged object: s3://enterprise-banking-etl-raw/raw/transactions/transaction_date=2026-07-15/transactions_20260715_00012.parquet
+2026-07-15 09:16:36,388 | INFO | S3DailyPartitionUploader | Skipping unchanged object: s3://enterprise-banking-etl-raw/raw/transactions/transaction_date=2026-07-15/transactions_20260715_00013.parquet
+2026-07-15 09:16:36,452 | INFO | S3DailyPartitionUploader | Skipping unchanged object: s3://enterprise-banking-etl-raw/raw/transactions/transaction_date=2026-07-15/transactions_20260715_00014.parquet
+2026-07-15 09:16:36,555 | INFO | S3DailyPartitionUploader | Skipping unchanged object: s3://enterprise-banking-etl-raw/raw/transactions/transaction_date=2026-07-15/transactions_20260715_00015.parquet
+2026-07-15 09:16:36,617 | INFO | S3DailyPartitionUploader | Skipping unchanged object: s3://enterprise-banking-etl-raw/raw/transactions/transaction_date=2026-07-15/transactions_20260715_00016.parquet
+2026-07-15 09:16:36,617 | INFO | S3DailyPartitionUploader | Dataset completed: transactions | uploaded=0 | skipped=16
+2026-07-15 09:16:36,617 | INFO | S3DailyPartitionUploader | Processing daily dataset: fraud
+2026-07-15 09:16:36,677 | INFO | S3DailyPartitionUploader | Skipping unchanged object: s3://enterprise-banking-etl-raw/raw/fraud/detection_date=2026-07-15/fraud_20260715_00001.parquet
+2026-07-15 09:16:36,677 | INFO | S3DailyPartitionUploader | Dataset completed: fraud | uploaded=0 | skipped=1
+2026-07-15 09:16:36,677 | INFO | S3DailyPartitionUploader | Daily S3 upload completed | execution_date=2026-07-15 | uploaded=0 | skipped=17
+2026-07-15 09:21:58,785 | INFO | botocore.credentials | Found credentials in shared credentials file: ~/.aws/credentials
+2026-07-15 09:21:59,039 | INFO | S3DailyPartitionUploader | Starting daily S3 upload | execution_date=2026-07-15
+2026-07-15 09:21:59,040 | INFO | S3DailyPartitionUploader | Processing daily dataset: transactions
+2026-07-15 09:21:59,336 | INFO | S3DailyPartitionUploader | Skipping unchanged object: s3://enterprise-banking-etl-raw/raw/transactions/transaction_date=2026-07-15/transactions_20260715_00001.parquet
+2026-07-15 09:21:59,391 | INFO | S3DailyPartitionUploader | Skipping unchanged object: s3://enterprise-banking-etl-raw/raw/transactions/transaction_date=2026-07-15/transactions_20260715_00002.parquet
+2026-07-15 09:21:59,451 | INFO | S3DailyPartitionUploader | Skipping unchanged object: s3://enterprise-banking-etl-raw/raw/transactions/transaction_date=2026-07-15/transactions_20260715_00003.parquet
+2026-07-15 09:21:59,512 | INFO | S3DailyPartitionUploader | Skipping unchanged object: s3://enterprise-banking-etl-raw/raw/transactions/transaction_date=2026-07-15/transactions_20260715_00004.parquet
+2026-07-15 09:21:59,581 | INFO | S3DailyPartitionUploader | Skipping unchanged object: s3://enterprise-banking-etl-raw/raw/transactions/transaction_date=2026-07-15/transactions_20260715_00005.parquet
+2026-07-15 09:21:59,641 | INFO | S3DailyPartitionUploader | Skipping unchanged object: s3://enterprise-banking-etl-raw/raw/transactions/transaction_date=2026-07-15/transactions_20260715_00006.parquet
+2026-07-15 09:21:59,703 | INFO | S3DailyPartitionUploader | Skipping unchanged object: s3://enterprise-banking-etl-raw/raw/transactions/transaction_date=2026-07-15/transactions_20260715_00007.parquet
+2026-07-15 09:21:59,759 | INFO | S3DailyPartitionUploader | Skipping unchanged object: s3://enterprise-banking-etl-raw/raw/transactions/transaction_date=2026-07-15/transactions_20260715_00008.parquet
+2026-07-15 09:21:59,844 | INFO | S3DailyPartitionUploader | Skipping unchanged object: s3://enterprise-banking-etl-raw/raw/transactions/transaction_date=2026-07-15/transactions_20260715_00009.parquet
+2026-07-15 09:21:59,902 | INFO | S3DailyPartitionUploader | Skipping unchanged object: s3://enterprise-banking-etl-raw/raw/transactions/transaction_date=2026-07-15/transactions_20260715_00010.parquet
+2026-07-15 09:21:59,966 | INFO | S3DailyPartitionUploader | Skipping unchanged object: s3://enterprise-banking-etl-raw/raw/transactions/transaction_date=2026-07-15/transactions_20260715_00011.parquet
+2026-07-15 09:22:00,028 | INFO | S3DailyPartitionUploader | Skipping unchanged object: s3://enterprise-banking-etl-raw/raw/transactions/transaction_date=2026-07-15/transactions_20260715_00012.parquet
+2026-07-15 09:22:00,088 | INFO | S3DailyPartitionUploader | Skipping unchanged object: s3://enterprise-banking-etl-raw/raw/transactions/transaction_date=2026-07-15/transactions_20260715_00013.parquet
+2026-07-15 09:22:00,142 | INFO | S3DailyPartitionUploader | Skipping unchanged object: s3://enterprise-banking-etl-raw/raw/transactions/transaction_date=2026-07-15/transactions_20260715_00014.parquet
+2026-07-15 09:22:00,202 | INFO | S3DailyPartitionUploader | Skipping unchanged object: s3://enterprise-banking-etl-raw/raw/transactions/transaction_date=2026-07-15/transactions_20260715_00015.parquet
+2026-07-15 09:22:00,272 | INFO | S3DailyPartitionUploader | Skipping unchanged object: s3://enterprise-banking-etl-raw/raw/transactions/transaction_date=2026-07-15/transactions_20260715_00016.parquet
+2026-07-15 09:22:00,273 | INFO | S3DailyPartitionUploader | Dataset completed: transactions | uploaded=0 | skipped=16
+2026-07-15 09:22:00,273 | INFO | S3DailyPartitionUploader | Processing daily dataset: fraud
+2026-07-15 09:22:00,332 | INFO | S3DailyPartitionUploader | Skipping unchanged object: s3://enterprise-banking-etl-raw/raw/fraud/detection_date=2026-07-15/fraud_20260715_00001.parquet
+2026-07-15 09:22:00,332 | INFO | S3DailyPartitionUploader | Dataset completed: fraud | uploaded=0 | skipped=1
+2026-07-15 09:22:00,332 | INFO | S3DailyPartitionUploader | Daily S3 upload completed | execution_date=2026-07-15 | uploaded=0 | skipped=17

@@ -1,0 +1,62 @@
+USE DATABASE ENTERPRISE_BANKING;
+USE SCHEMA STAGING;
+
+CREATE OR REPLACE VIEW STG_TRANSACTIONS AS
+
+SELECT
+    RAW_RECORD:transaction_id::VARCHAR
+        AS TRANSACTION_ID,
+
+    RAW_RECORD:account_id::VARCHAR
+        AS ACCOUNT_ID,
+
+    RAW_RECORD:customer_id::VARCHAR
+        AS CUSTOMER_ID,
+
+    RAW_RECORD:branch_id::VARCHAR
+        AS BRANCH_ID,
+
+    RAW_RECORD:transaction_type::VARCHAR
+        AS TRANSACTION_TYPE,
+
+    RAW_RECORD:transaction_direction::VARCHAR
+        AS TRANSACTION_DIRECTION,
+
+    RAW_RECORD:transaction_amount::NUMBER(18, 2)
+        AS TRANSACTION_AMOUNT,
+
+    RAW_RECORD:transaction_status::VARCHAR
+        AS TRANSACTION_STATUS,
+
+    TRY_TO_TIMESTAMP_NTZ(
+        RAW_RECORD:transaction_timestamp::VARCHAR
+    ) AS TRANSACTION_TIMESTAMP,
+
+    RAW_RECORD:transaction_channel::VARCHAR
+        AS TRANSACTION_CHANNEL,
+
+    RAW_RECORD:merchant_name::VARCHAR
+        AS MERCHANT_NAME,
+
+    RAW_RECORD:merchant_category::VARCHAR
+        AS MERCHANT_CATEGORY,
+
+    RAW_RECORD:transaction_city::VARCHAR
+        AS TRANSACTION_CITY,
+
+    RAW_RECORD:transaction_state::VARCHAR
+        AS TRANSACTION_STATE,
+
+    RAW_RECORD:currency_code::VARCHAR
+        AS CURRENCY_CODE,
+
+    RAW_RECORD:batch_id::VARCHAR
+        AS BATCH_ID,
+
+    SOURCE_FILE,
+
+    SOURCE_ROW_NUMBER,
+
+    LOAD_TIMESTAMP
+
+FROM RAW.RAW_TRANSACTIONS;

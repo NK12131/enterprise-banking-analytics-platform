@@ -1,0 +1,16 @@
+/*****************************************************************************************
+ Script Name : 03_create_roles.sql
+******************************************************************************************/
+
+USE ROLE SECURITYADMIN;
+
+CREATE ROLE IF NOT EXISTS BANKING_ADMIN;
+CREATE ROLE IF NOT EXISTS DATA_ENGINEER;
+CREATE ROLE IF NOT EXISTS DATA_ANALYST;
+CREATE ROLE IF NOT EXISTS BI_USER;
+CREATE ROLE IF NOT EXISTS READ_ONLY;
+
+GRANT ROLE DATA_ENGINEER TO ROLE BANKING_ADMIN;
+GRANT ROLE DATA_ANALYST TO ROLE BANKING_ADMIN;
+GRANT ROLE BI_USER TO ROLE DATA_ANALYST;
+GRANT ROLE READ_ONLY TO ROLE BI_USER;

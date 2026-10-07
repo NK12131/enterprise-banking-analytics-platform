@@ -1,0 +1,61 @@
+USE DATABASE ENTERPRISE_BANKING;
+USE SCHEMA STAGING;
+
+CREATE OR REPLACE VIEW STG_CUSTOMERS AS
+
+SELECT
+    RAW_RECORD:customer_id::VARCHAR
+        AS CUSTOMER_ID,
+
+    RAW_RECORD:branch_id::VARCHAR
+        AS BRANCH_ID,
+
+    RAW_RECORD:first_name::VARCHAR
+        AS FIRST_NAME,
+
+    RAW_RECORD:last_name::VARCHAR
+        AS LAST_NAME,
+
+    RAW_RECORD:date_of_birth::DATE
+        AS DATE_OF_BIRTH,
+
+    RAW_RECORD:gender::VARCHAR
+        AS GENDER,
+
+    RAW_RECORD:email::VARCHAR
+        AS EMAIL,
+
+    RAW_RECORD:phone_number::VARCHAR
+        AS PHONE_NUMBER,
+
+    RAW_RECORD:city::VARCHAR
+        AS CITY,
+
+    RAW_RECORD:state::VARCHAR
+        AS STATE,
+
+    RAW_RECORD:postal_code::VARCHAR
+        AS ZIP_CODE,
+
+    RAW_RECORD:profile::VARCHAR
+        AS CUSTOMER_PROFILE,
+
+    RAW_RECORD:customer_status::VARCHAR
+        AS CUSTOMER_STATUS,
+
+    RAW_RECORD:annual_income::NUMBER(18, 2)
+        AS ANNUAL_INCOME,
+
+    RAW_RECORD:credit_score::NUMBER
+        AS CREDIT_SCORE,
+
+    RAW_RECORD:customer_since::DATE
+        AS CUSTOMER_SINCE,
+
+    SOURCE_FILE,
+
+    SOURCE_ROW_NUMBER,
+
+    LOAD_TIMESTAMP
+
+FROM RAW.RAW_CUSTOMERS;

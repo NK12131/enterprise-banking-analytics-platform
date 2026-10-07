@@ -1,0 +1,39 @@
+version: 1
+
+disable_existing_loggers: false
+
+formatters:
+
+  standard:
+
+    format: "%(asctime)s | %(levelname)s | %(name)s | %(message)s"
+
+handlers:
+
+  console:
+
+    class: logging.StreamHandler
+
+    formatter: standard
+
+    level: INFO
+
+  file:
+
+    class: logging.FileHandler
+
+    formatter: standard
+
+    filename: logs/generator.log
+
+    level: INFO
+
+root:
+
+  handlers:
+
+    - console
+
+    - file
+
+  level: INFO

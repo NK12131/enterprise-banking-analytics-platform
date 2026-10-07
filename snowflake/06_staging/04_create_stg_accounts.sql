@@ -1,0 +1,55 @@
+USE DATABASE ENTERPRISE_BANKING;
+USE SCHEMA STAGING;
+
+CREATE OR REPLACE VIEW STG_ACCOUNTS AS
+
+SELECT
+    RAW_RECORD:account_id::VARCHAR
+        AS ACCOUNT_ID,
+
+    RAW_RECORD:account_number::VARCHAR
+        AS ACCOUNT_NUMBER,
+
+    RAW_RECORD:customer_id::VARCHAR
+        AS CUSTOMER_ID,
+
+    RAW_RECORD:branch_id::VARCHAR
+        AS BRANCH_ID,
+
+    RAW_RECORD:branch_code::VARCHAR
+        AS BRANCH_CODE,
+
+    RAW_RECORD:account_type::VARCHAR
+        AS ACCOUNT_TYPE,
+
+    RAW_RECORD:account_status::VARCHAR
+        AS ACCOUNT_STATUS,
+
+    RAW_RECORD:currency_code::VARCHAR
+        AS CURRENCY_CODE,
+
+    RAW_RECORD:current_balance::NUMBER(18, 2)
+        AS CURRENT_BALANCE,
+
+    RAW_RECORD:available_balance::NUMBER(18, 2)
+        AS AVAILABLE_BALANCE,
+
+    RAW_RECORD:interest_rate::NUMBER(10, 6)
+        AS INTEREST_RATE,
+
+    RAW_RECORD:opened_date::DATE
+        AS OPENED_DATE,
+
+    RAW_RECORD:closed_date::DATE
+        AS CLOSED_DATE,
+
+    RAW_RECORD:batch_id::VARCHAR
+        AS BATCH_ID,
+
+    SOURCE_FILE,
+
+    SOURCE_ROW_NUMBER,
+
+    LOAD_TIMESTAMP
+
+FROM RAW.RAW_ACCOUNTS;

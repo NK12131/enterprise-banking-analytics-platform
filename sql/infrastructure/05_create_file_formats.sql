@@ -1,0 +1,26 @@
+/*****************************************************************************************
+ Script Name : 05_create_file_formats.sql
+******************************************************************************************/
+
+USE ROLE SYSADMIN;
+
+USE DATABASE BANKING_ANALYTICS_DB;
+USE SCHEMA RAW;
+
+CREATE FILE FORMAT IF NOT EXISTS FF_JSON
+TYPE = JSON
+STRIP_OUTER_ARRAY = TRUE
+COMPRESSION = AUTO;
+
+CREATE FILE FORMAT IF NOT EXISTS FF_PARQUET
+TYPE = PARQUET
+COMPRESSION = AUTO;
+
+CREATE FILE FORMAT IF NOT EXISTS FF_CSV
+TYPE = CSV
+FIELD_DELIMITER=','
+SKIP_HEADER=1
+FIELD_OPTIONALLY_ENCLOSED_BY='"'
+NULL_IF=('NULL','')
+EMPTY_FIELD_AS_NULL=TRUE
+COMPRESSION=AUTO;
