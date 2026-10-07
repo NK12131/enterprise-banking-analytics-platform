@@ -373,19 +373,7 @@ Validation rules include:
 - Incremental Processing
 - Enterprise Architecture
 
----
-
-# ⭐ Support
-
-If you found this project useful, please consider giving it a ⭐ to support the repository.
-
----
 
 ## 👤 Author
 
-**Subashini Jothilingam**
-
-Data Engineer | Snowflake | PySpark | Airflow | dbt | AWS | SQL
-
-GitHub: https://github.com/subashini-jothilingam
-LinkedIn: https://linkedin.com/in/subashini-jothilingam
+**Nithin Kumar**
